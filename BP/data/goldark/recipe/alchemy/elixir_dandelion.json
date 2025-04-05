@@ -1,0 +1,43 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        "dandelion",
+        "sugar"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "custom_data": {
+                "goldark.items.elixir_dandelion": true
+            },
+            "item_name": "Elixir of Sun Warmth",
+            "rarity": "uncommon",
+            "lore": [
+                {
+                    "text": "A simple, yet refreshing brew.",
+                    "italic": false,
+                    "color": "gray"
+                }
+            ],
+            "potion_contents": {
+                "custom_color": 14348383,
+                "custom_effects": [
+                    {
+                        "id": "saturation",
+                        "ambient": true,
+                        "duration": 10,
+                        "show_icon": false
+                    },
+                    {
+                        "id": "glowing",
+                        "ambient": true,
+                        "duration": 50,
+                        "show_icon": false,
+                        "show_particles": false
+                    }
+                ]
+            }
+        }
+    }
+}
