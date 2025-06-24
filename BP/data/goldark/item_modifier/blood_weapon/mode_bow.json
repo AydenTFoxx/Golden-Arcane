@@ -1,0 +1,19 @@
+{
+    "function": "set_components",
+    "components": {
+        "consumable": {
+            "animation": "bow",
+            "consume_seconds": 999999,
+            "has_consume_particles": false,
+            "sound": "block.sculk.charge"
+        },
+        "custom_data": {
+            "goldark": {
+                "items": {
+                    "blood_weapon": true,
+                    "weapon_mode": "bow"
+                }
+            }
+        }
+    }
+}

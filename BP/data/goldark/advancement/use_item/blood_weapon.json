@@ -1,0 +1,49 @@
+{
+    "criteria": {
+        "use_item_block": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "#swords",
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "blood_weapon": true,
+                                    "weapon_mode": "block"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "use_item_bow": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "#swords",
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "blood_weapon": true,
+                                    "weapon_mode": "bow"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "use_item_block",
+            "use_item_bow"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:items/blood_weapon/charge"
+    }
+}

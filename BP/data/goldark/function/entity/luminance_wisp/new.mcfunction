@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ { CustomName: { text: "Luminance Wisp" }, CustomNameVisible: false, Tags: [ "goldark.entity.luminance_wisp" ] }

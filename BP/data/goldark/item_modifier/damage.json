@@ -1,0 +1,10 @@
+{
+    "function": "sequence",
+    "functions": [
+        {
+            "function": "set_damage",
+            "damage": -0.01,
+            "add": true
+        }
+    ]
+}

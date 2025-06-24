@@ -1,24 +1,23 @@
-## * AydenTFoxx @ 2025-04-04
+## * AydenTFoxx @ 2025-04-04 .. 2025-06-18
 ## * 
 ## * Executes the datapack's behaviors at a custom tick rate.
 
-## ? Functions are tagged according to how often they must be run to operate properly.
-## ? As a rule of thumb, if a function does not require extreme precision, tick-rated is to be preferred.
+
+##? GLOBAL VALUES
+# Values which must be updated every tick; For usage by relevant modules.
+
+##// Daytime (superseded by predicate "goldark:location/is_daytime")
+#//execute store result score #goldark_daytime goldark.dummy run time query daytime
 
 
-## ALWAYS RUN
-
-# Functions here are run every game tick
-#function #goldark:tick_always
-
-
-## GOLDARK CLOCK
+##? GOLDARK CLOCK
+# The core and heart of Golden Arcane's update execution.
 
 # Tick GOLDARK Clock
-scoreboard players add #goldark_tick goldark.dummy 1
+scoreboard players add $goldark_tick goldark.dummy 1
 
-# Functions here are run every GOLDARK tick (based on #goldark_tick_rate)
-execute if score #goldark_tick goldark.dummy = #goldark_tick_rate goldark.dummy run function #goldark:tick_rated
+# Functions are run based on priority and rate of execution
+execute if score $goldark_tick goldark.dummy >= #goldark_tick_rate goldark.dummy run function #goldark:tick_rated
 
 # Reset GOLDARK Clock
-execute if score #goldark_tick goldark.dummy >= #goldark_tick_rate goldark.dummy run scoreboard players set #goldark_tick goldark.dummy 0
+execute if score $goldark_tick goldark.dummy >= #goldark_tick_rate goldark.dummy run scoreboard players set $goldark_tick goldark.dummy 0
