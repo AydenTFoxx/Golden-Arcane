@@ -1,9 +1,9 @@
-## * * * * * * * * * * * * * * ##
-## * AydenTFoxx @ 2025-06-16 * ##
-## * * * * * * * * * * * * * * ##
+## * AydenTFoxx @ 2025-06-16
+## * 
+## * Summons a new "Shadow" entity.
 
 
-# Summons a new Shadow entity
+# Summon entity
 summon interaction ~ ~ ~ { \
     CustomName: { text: "Shadow", color: "black", obfuscated: true }, \
     CustomNameVisible: false, \
@@ -12,7 +12,7 @@ summon interaction ~ ~ ~ { \
     Tags: [ goldark.entity.shadow ] \
 }
 
-# Set entity health
+# Set health
 execute as @e[type=interaction, distance=0, tag=goldark.entity.shadow] unless score @s goldark.health matches 1.. \
         run scoreboard players set @s goldark.health 2
 

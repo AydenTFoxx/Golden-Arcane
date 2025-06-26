@@ -1,9 +1,12 @@
 ## * AydenTFoxx @ 2025-04-01 .. 2025-06-23
 ## * 
-## * ...
+## * Grants and ticks the Luminance custom effect for players.
+## * 
+## * Luminance lights up terrain with Light blocks, which are removed when the player walks away.
+## * Undead creatures burn as if under sunlight; Shadows run away and, if close enough, also burn like undead creatures.
 
-## ? On Use: potion_luminance
-## ? Grants Effect: Luminance
+#? On Use: potion_luminance
+#? Grants Effect: Luminance
 
 
 ## INIT
@@ -15,11 +18,11 @@ advancement revoke @s only goldark:use_item/potion_luminance
 # Display visual feedback
 execute unless entity @s[tag=goldark.effect.luminance] run particle end_rod ~ ~0.5 ~ 0.1 0.2 0.1 0.05 12
 
-# Add tag
-execute unless entity @s[tag=goldark.effect.luminance] run tag @s add goldark.effect.luminance
-
 # Set duration
 execute unless entity @s[tag=goldark.effect.luminance] run scoreboard players set @s goldark.ability_clock 3600
+
+# Add tag
+execute unless entity @s[tag=goldark.effect.luminance] run tag @s add goldark.effect.luminance
 
 
 ## TICK

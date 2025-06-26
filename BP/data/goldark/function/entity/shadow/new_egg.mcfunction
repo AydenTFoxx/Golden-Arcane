@@ -1,6 +1,7 @@
-## * * * * * * * * * * * * * * ##
-## * AydenTFoxx @ 2025-06-16 * ##
-## * * * * * * * * * * * * * * ##
+## * AydenTFoxx @ 2025-06-16
+## * 
+## * Spawns a new Shadow entity from its spawn egg.
+## * May also be used for replacing naturally-spawned mobs with Shadow entities.
 
 
 # Spawn Shadow

@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "goldark:items/levitation_feather/apply_levitation"
+        "function": "goldark:item/levitation_feather/apply_levitation"
     }
 }

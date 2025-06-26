@@ -1,6 +1,6 @@
-## * * * * * * * * * * * * * * ##
-## * AydenTFoxx @ 2025-06-16 * ##
-## * * * * * * * * * * * * * * ##
+## * AydenTFoxx @ 2025-06-16
+## * 
+## * Displays a hurt animation, removing health and briefly making the Shadow invulnerable.
 
 
 ## HURT

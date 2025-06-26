@@ -1,3 +1,8 @@
+## * AydenTFoxx @ 2025-06-23* .. 2025-06-25
+## * 
+## * Updates the Blood Wisp's behaviors and abilities.
+
+
 # Tick timer
 scoreboard players add @s goldark.ability_timer 1
 

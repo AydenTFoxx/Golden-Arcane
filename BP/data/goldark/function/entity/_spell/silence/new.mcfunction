@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ { CustomName: { text: "Silence Spell" }, CustomNameVisible: false, Tags: [ goldark.entity.spell_silence ] }

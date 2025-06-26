@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "goldark:items/lightning_wand/zap_mob"
+        "function": "goldark:item/lightning_wand/zap_mob"
     }
 }

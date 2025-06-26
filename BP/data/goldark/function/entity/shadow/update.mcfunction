@@ -1,6 +1,6 @@
 ## * AydenTFoxx @ 2025-06-16 .. 2025-06-17
 ## * 
-## * Updates all behavior relating to Shadows' AI.
+## * Updates the Shadow's behavior and abilities.
 
 
 ## AMBIENT

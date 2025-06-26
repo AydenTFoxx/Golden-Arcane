@@ -44,6 +44,6 @@
         ]
     ],
     "rewards": {
-        "function": "goldark:items/blood_weapon/charge"
+        "function": "goldark:item/blood_weapon/charge"
     }
 }

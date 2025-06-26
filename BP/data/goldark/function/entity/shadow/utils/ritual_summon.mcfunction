@@ -1,6 +1,6 @@
-## * AydenTFoxx @ 2025-06-17
+## * AydenTFoxx @ 2025-06-17 .. 2025-06-25
 ## * 
-## * ...
+## * Spawns one to several Shadow entities upon completion.
 
 
 # Tick clock
@@ -29,6 +29,7 @@ execute if score @s goldark.ability_clock matches 40 run playsound ambient.basal
 
 # Summon Shadows
 execute if score @s goldark.ability_clock matches 60.. if predicate goldark:random/10 run function goldark:entity/shadow/new
+execute if score @s goldark.ability_clock matches 80 run function goldark:entity/shadow/new
 
 # Extinguish candles
 execute if score @s goldark.ability_clock matches 80.. run summon wind_charge ~ ~0.5 ~ { Silent: 1b, Motion: [ 0.0f, -0.5f, 0.0f ] }

@@ -1,6 +1,6 @@
-## * * * * * * * * * * * * * * ##
-## * AydenTFoxx @ 2025-06-16 * ##
-## * * * * * * * * * * * * * * ##
+## * AydenTFoxx @ 2025-06-16
+## * 
+## * Displays extra particles and slowly kills the Shadow while under daylight.
 
 
 ## SUNLIGHT

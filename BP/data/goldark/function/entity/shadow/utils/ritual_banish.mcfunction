@@ -1,6 +1,6 @@
 ## * AydenTFoxx @ 2025-06-17
 ## * 
-## * ...
+## * Kills all Shadow entities in a large radius upon completion.
 
 
 # Tick clock

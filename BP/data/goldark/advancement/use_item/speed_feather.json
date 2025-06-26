@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "goldark:items/speed_feather/apply_speed"
+        "function": "goldark:item/speed_feather/apply_speed"
     }
 }
