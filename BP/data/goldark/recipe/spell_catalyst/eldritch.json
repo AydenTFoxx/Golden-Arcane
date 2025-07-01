@@ -1,0 +1,59 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "gold_ingot",
+        "d": "glowstone_dust",
+        "E": "ender_eye"
+    },
+    "pattern": [
+        "Gd",
+        "dE"
+    ],
+    "result": {
+        "id": "sheep_spawn_egg",
+        "components": {
+            "item_name": {
+                "text": "Eldritch Catalyst"
+            },
+            "item_model": "magma_cream",
+            "rarity": "uncommon",
+            "lore": [
+                {
+                    "translate": "Use to activate %s type spells.",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "text": "Eldritch",
+                            "color": "yellow"
+                        }
+                    ]
+                }
+            ],
+            "enchantment_glint_override": true,
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "spell_catalyst": true
+                    }
+                }
+            },
+            "entity_data": {
+                "id": "marker",
+                "Tags": [ "goldark.entity.spell_catalyst" ],
+                "data": {
+                    "goldark": {
+                        "spell_catalyst": {
+                            "type": {
+                                "eldritch": true
+                            },
+                            "name": "Eldritch",
+                            "model": "magma_cream"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "group": "goldark:spell_catalysts"
+}

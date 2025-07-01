@@ -1,0 +1,42 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        "gold_ingot",
+        "glowstone_dust",
+        "blaze_powder"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "custom_name": {
+                "text": "Potion of Luminance",
+                "italic": false
+            },
+            "rarity": "uncommon",
+            "lore": [
+                {
+                    "text": "Luminance (03:00)",
+                    "italic": false,
+                    "color": "blue"
+                }
+            ],
+            "potion_contents": {
+                "custom_color": 15519300,
+                "custom_effects": [
+                    {
+                        "id": "glowing",
+                        "duration": 3600
+                    }
+                ]
+            },
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "potion_luminance": true
+                    }
+                }
+            }
+        }
+    }
+}

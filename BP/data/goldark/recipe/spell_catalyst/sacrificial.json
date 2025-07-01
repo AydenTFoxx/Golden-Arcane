@@ -1,0 +1,59 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "gold_ingot",
+        "d": "glowstone_dust",
+        "S": "spider_eye"
+    },
+    "pattern": [
+        "Gd",
+        "dS"
+    ],
+    "result": {
+        "id": "sheep_spawn_egg",
+        "components": {
+            "item_name": {
+                "text": "Sacrificial Catalyst"
+            },
+            "item_model": "fermented_spider_eye",
+            "rarity": "uncommon",
+            "lore": [
+                {
+                    "translate": "Use to activate %s type spells.",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "text": "Sacrificial",
+                            "color": "yellow"
+                        }
+                    ]
+                }
+            ],
+            "enchantment_glint_override": true,
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "spell_catalyst": true
+                    }
+                }
+            },
+            "entity_data": {
+                "id": "marker",
+                "Tags": [ "goldark.entity.spell_catalyst" ],
+                "data": {
+                    "goldark": {
+                        "spell_catalyst": {
+                            "type": {
+                                "sacrificial": true
+                            },
+                            "name": "Sacrificial",
+                            "model": "fermented_spider_eye"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "group": "goldark:spell_catalysts"
+}
