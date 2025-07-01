@@ -1,0 +1,21 @@
+{
+    "parent": "goldark:_root",
+    "display": {
+        "title": "Essence of Magic",
+        "description": "Store a spell in a Scroll of Essence",
+        "icon": {
+            "id": "flow_banner_pattern",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        }
+    },
+    "criteria": {
+        "seal_spell": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 7
+    }
+}

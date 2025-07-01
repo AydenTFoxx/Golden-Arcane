@@ -1,0 +1,59 @@
+{
+    "parent": "goldark:unlock_catalyst",
+    "display": {
+        "title": "Masterful Craft",
+        "description": "Unlock and craft every type of Magic Catalyst",
+        "icon": {
+            "id": "glowstone_dust",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "unlock_primordial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/primordial"
+            }
+        },
+        "unlock_divine": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/divine"
+            }
+        },
+        "unlock_imperial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/imperial"
+            }
+        },
+        "unlock_forbidden": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/forbidden"
+            }
+        },
+        "unlock_eldritch": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/eldritch"
+            }
+        },
+        "unlock_sacrificial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/sacrificial"
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:spell_catalyst/singularity",
+            "goldark:spell_catalyst/singularity_short"
+        ],
+        "experience": 20
+    }
+}

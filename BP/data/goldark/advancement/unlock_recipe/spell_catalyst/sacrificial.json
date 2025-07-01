@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "obtain_ingredient": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "spider_eye"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:spell_catalyst/sacrificial"
+        ]
+    }
+}

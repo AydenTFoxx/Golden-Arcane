@@ -1,0 +1,62 @@
+{
+    "parent": "goldark:_root",
+    "display": {
+        "title": "Catalyst of Change",
+        "description": "Craft a Magic Catalyst",
+        "icon": {
+            "id": "quartz"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "unlock_primordial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/primordial"
+            }
+        },
+        "unlock_divine": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/divine"
+            }
+        },
+        "unlock_imperial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/imperial"
+            }
+        },
+        "unlock_forbidden": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/forbidden"
+            }
+        },
+        "unlock_eldritch": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/eldritch"
+            }
+        },
+        "unlock_sacrificial": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "goldark:spell_catalyst/sacrificial"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "unlock_divine",
+            "unlock_eldritch",
+            "unlock_forbidden",
+            "unlock_imperial",
+            "unlock_primordial",
+            "unlock_sacrificial"
+        ]
+    ],
+    "rewards": {
+        "experience": 8
+    }
+}

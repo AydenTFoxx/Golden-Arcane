@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "recovery_compass",
+                        "compass",
+                        "shears"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "locator_compass": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:item/locator_compass/use_item"
+    }
+}
