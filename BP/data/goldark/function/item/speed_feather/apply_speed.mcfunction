@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23*
+## * AydenTFoxx @ 2025-06-23* .. 2025-06-27
 ## * 
 ## * Moves the user forward at great speeds, at the cost of quick durability drain.
 
@@ -11,7 +11,7 @@ execute if entity @s[tag=goldark.magic_sickness] run return fail
 
 
 # Set cooldown
-scoreboard players set @s goldark.ability_timer 2
+scoreboard players set @s goldark.ability_timer 1
 
 tag @s add goldark.magic_sickness
 
@@ -35,5 +35,5 @@ playsound entity.breeze.slide player @a[distance=..16] ~ ~ ~ 0.8 1.2
 
 
 # Damage item
-execute if items entity @s[gamemode=!creative] weapon.mainhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "mainhand" }
-execute if items entity @s[gamemode=!creative] weapon.offhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "offhand" }
+execute if items entity @s[gamemode=!creative] weapon.mainhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 120 }
+execute if items entity @s[gamemode=!creative] weapon.offhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 120 }

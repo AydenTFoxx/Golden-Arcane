@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-25
+## * AydenTFoxx @ 2025-06-23* .. 2025-06-27
 ## * 
 ## * Ascends the user upwards, with a brief slow fall afterwards.
 
@@ -11,7 +11,7 @@ execute if entity @s[tag=goldark.magic_sickness] run return fail
 
 
 # Set cooldown
-scoreboard players set @s goldark.ability_timer 20
+scoreboard players set @s goldark.ability_timer 10
 
 tag @s add goldark.magic_sickness
 
