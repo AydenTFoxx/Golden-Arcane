@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-24 .. 2025-06-25
+## * AydenTFoxx @ 2025-06-24 .. 2025-06-27
 ## * 
 ## * Displays a "link" between two Ward spells.
 
@@ -11,4 +11,4 @@
 
 
 # Display particles
-$execute at @s run particle trail{ target: [ $(x), $(y), $(z) ], duration: 20s, color: 13509411 } ~ ~ ~ 0.0 0.0 0.0 1.0 2
+$execute at @s run particle trail{ target: [ $(x), $(y), $(z) ], duration: 40s, color: 13509411 } ~ ~ ~ 0.0 0.0 0.0 1.0 2

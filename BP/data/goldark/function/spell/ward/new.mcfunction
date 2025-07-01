@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-06-25
+## * AydenTFoxx @ 2025-06-18 .. 2025-06-30
 ## * 
 ## * Summons a new "Ward" Spell entity.
 
@@ -14,7 +14,7 @@
 
 
 # Summon entity
-summon marker ~ ~ ~ { CustomName: { text: "Ward Spell" }, CustomNameVisible: false, Tags: [ goldark.entity.spell_lock ], data: { goldark: { spell_lock: {} } } }
+summon marker ~ ~ ~ { CustomName: { text: "Ward Spell" }, CustomNameVisible: false, Tags: [ goldark.entity.spell_lock, goldark.is_spell ], data: { goldark: { spell_lock: {} } } }
 
 # Set coordinates for linking
 execute as @n[type=marker, tag=goldark.entity.spell_lock, distance=..1] run data modify entity @s data.goldark.spell_lock.x set from entity @s Pos[0]

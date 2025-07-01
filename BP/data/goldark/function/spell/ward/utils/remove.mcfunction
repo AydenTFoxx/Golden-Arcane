@@ -1,15 +1,13 @@
-## * AydenTFoxx @ 2025-06-25
+## * AydenTFoxx @ 2025-06-25 .. 2025-06-30
 ## * 
 ## * Removes the Smite spell and returns its "waste" item.
 
 
-# Spawn Item
-summon item ~ ~0.1 ~ { Item: { id: "minecraft:gunpowder" }, PickupDelay: 20s, Tags: [ goldark.item_drop ] }
+## Ignore until expired
+execute if entity @s[tag=goldark.is_essence, tag=!goldark.is_expired] run return run function goldark:entity/spell_essence/update
 
-# Set random Motion
-execute store result entity @n[type=item, tag=goldark.item_drop, distance=..1] Motion[0] float 0.01 run random value -10..10
-execute store result entity @n[type=item, tag=goldark.item_drop, distance=..1] Motion[1] float 0.01 run random value 1..10
-execute store result entity @n[type=item, tag=goldark.item_drop, distance=..1] Motion[2] float 0.01 run random value -10..10
+# Drop item
+execute unless entity @s[tag=goldark.is_essence] run function goldark:spell/_utils/drop_item { item: "minecraft:gunpowder" }
 
 
 # Display "break" effects

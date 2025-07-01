@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-25
+## * AydenTFoxx @ 2025-06-23* .. 2025-06-29
 ## * 
 ## * Teleports the user to the selected dimension and coordinates.
 
@@ -7,6 +7,10 @@
 #? x: The X position of the target coordinates.
 #? y: The Y position of the target coordinates.
 #? z: The Z position of the target coordinates.
+
+
+## Ignore if not initialized
+execute if entity @s[tag=goldark.entity.spell_gate_new] run return run data remove entity @s interaction
 
 
 # Display teleport effects
@@ -19,4 +23,4 @@ $execute as @p[distance=..128] in $(dimension) run tp $(x) $(y) $(z)
 
 
 # Remove self
-function goldark:spell/warp/utils/remove
+execute if entity @s[tag=goldark.is_one_use] run function goldark:spell/warp/utils/remove
