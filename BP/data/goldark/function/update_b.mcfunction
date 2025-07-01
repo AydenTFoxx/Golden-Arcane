@@ -1,45 +1,41 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-06-25
+## * AydenTFoxx @ 2025-06-18 .. 2025-07-01
 ## * 
-## * Updates all custom features of the datapack at a custom rate.
+## * Updates all features of the datapack at a custom rate.
 
 #? Tick Rate: 2:1
+#? Step: 2
 
 
-##? EFFECT
+##? COOLDOWN
 
-## Silence (Revoke)
-execute as @e[type=!#goldark:technical, tag=goldark.is_silenced] at @s if loaded ~ ~ ~ unless entity @n[type=marker, tag=goldark.entity.spell_silence, distance=..16] run function goldark:spell/silence/utils/toggle_silence
+# Remove time
+scoreboard players remove @a[scores={ goldark.ability_timer=1.. }] goldark.ability_timer 1
+
+# Reset cooldown
+tag @a[tag=goldark.magic_sickness, scores={ goldark.ability_timer=..0 }] remove goldark.magic_sickness
+
+scoreboard players reset @a[scores={ goldark.ability_timer=..0 }] goldark.ability_timer
 
 
-##? ENTITY
+##? MANA
 
-## Luminance Wisp
-execute as @e[type=marker, tag=goldark.entity.luminance_wisp] at @s if loaded ~ ~ ~ run function goldark:entity/luminance_wisp/update
-
-## Blood Wisp
-execute as @e[type=marker, tag=goldark.entity.blood_wisp] at @s if loaded ~ ~ ~ run function goldark:entity/blood_wisp/update
+# Regenerate Mana
+execute as @a[scores={ goldark.mana=..19 }] unless score @s goldark.ability_timer matches 1.. run function goldark:spell/_utils/update_mana
 
 
 ##? SPELL
 
-## Warp (Warp Gate)
-execute as @e[type=interaction, tag=goldark.entity.spell_gate] at @s if loaded ~ ~ ~ run function goldark:spell/warp/update
+## Deflect
+execute as @e[type=marker, tag=goldark.entity.spell_deflect] at @s if loaded ~ ~ ~ run function goldark:spell/deflect/update
 
 ## Silence
 execute as @e[type=marker, tag=goldark.entity.spell_silence] at @s if loaded ~ ~ ~ run function goldark:spell/silence/update
 
-execute as @e[type=item, nbt={ Item: { id: "minecraft:echo_shard" } }, tag=!goldark.item_drop] at @s if block ~ ~ ~ #candles[lit=true] align xyz positioned ~0.5 ~0.5 ~0.5 run function goldark:spell/silence/new_ritual
-
 ## Smite
 execute as @e[type=marker, tag=goldark.entity.spell_smite] at @s if loaded ~ ~ ~ run function goldark:spell/smite/update
 
-execute as @e[type=item, nbt={ Item: { id: "minecraft:quartz" } }, tag=!goldark.item_drop] at @s if block ~ ~ ~ #candles[lit=true] align xyz positioned ~0.5 ~0.5 ~0.5 run function goldark:spell/smite/new_ritual
+## Ward (Magic Lock)
+execute as @e[type=marker, tag=goldark.entity.spell_lock] at @s if loaded ~ ~ ~ run function goldark:spell/ward/update
 
-
-##? ITEMS
-
-## Levitation Feather (Spawning Ritual)
-execute as @e[type=item, nbt={ Item: { id: "minecraft:feather" } }] at @s if block ~ ~ ~ #candles[lit=true] if block ~ ~-1 ~ glowstone run function goldark:item/levitation_feather/ritual_imbue
-
-## Speed Feather (Spawning Ritual)
-execute as @e[type=item, nbt={ Item: { id: "minecraft:shears", components: { "minecraft:custom_data": { goldark: { items: { levitation_feather: true } } } } } }] at @s if block ~ ~ ~ #candles[lit=true] if block ~ ~-1 ~ obsidian run function goldark:item/speed_feather/ritual_imbue
+## Warp (Warp Gate)
+execute as @e[type=interaction, tag=goldark.entity.spell_gate] at @s if loaded ~ ~ ~ run function goldark:spell/warp/update

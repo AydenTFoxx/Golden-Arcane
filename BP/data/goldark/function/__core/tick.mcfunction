@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-06-18
+## * AydenTFoxx @ 2025-04-04 .. 2025-06-27
 ## * 
 ## * Executes the datapack's behaviors at a custom tick rate.
 
@@ -14,10 +14,11 @@
 # The core and heart of Golden Arcane's update execution.
 
 # Tick GOLDARK Clock
-scoreboard players add $goldark_tick goldark.dummy 1
+execute unless data storage goldark:settings { benchmark: true } run scoreboard players add $goldark_tick goldark.dummy 1
 
-# Functions are run based on priority and rate of execution
-execute if score $goldark_tick goldark.dummy >= #goldark_tick_rate goldark.dummy run function #goldark:tick_rated
+# Functions are run in turns, lessening overload on the server.
+execute if score $goldark_tick goldark.dummy matches 1 run function goldark:update_a
+execute if score $goldark_tick goldark.dummy matches 2 run function goldark:update_b
 
 # Reset GOLDARK Clock
-execute if score $goldark_tick goldark.dummy >= #goldark_tick_rate goldark.dummy run scoreboard players set $goldark_tick goldark.dummy 0
+execute if score $goldark_tick goldark.dummy matches 2 run scoreboard players set $goldark_tick goldark.dummy 0

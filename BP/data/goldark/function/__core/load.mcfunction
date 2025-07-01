@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-06-18
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-01
 ## * 
 ## * Loads all required features for the datapack's functioning.
 
@@ -30,6 +30,10 @@ scoreboard objectives add goldark.health dummy { text: "Health", color: "red" }
 # A dedicated counter for identifying creatures. Each GUID is generated on the fly, and is not retrieved if its owner dies.
 scoreboard objectives add goldark.guid dummy { text: "GUID", color: "yellow" }
 
+## Magic Energy (goldark)
+# A dedicated meter for a player's "magic energy" capacity. Used as a "cost" for every spell.
+scoreboard objectives add goldark.mana dummy { text: "Mana", color: "light_purple" }
+
 
 ## True Health (goldark)
 # A read-only meter of player health. Used in predicates and for special abilities.
@@ -38,7 +42,8 @@ scoreboard objectives add goldark.health_player health { text: "Health (Player)"
 
 ##? FLAGS & VALUES
 
-# [...]
+## Initialize default settings
+execute unless data storage goldark:settings { init: true } run data merge storage goldark:settings { graphics: "fancy", debug_mode: false, verbose_mode: true, init: true }
 
 
 # Set datapack tick rate
@@ -46,3 +51,12 @@ execute unless score #goldark_tick_rate goldark.dummy matches 1.. run scoreboard
 
 # Set initial GUID
 execute unless score #goldark_guid goldark.guid matches 1.. run scoreboard players set #goldark_guid goldark.guid 1
+
+
+##? VERSIONING
+
+## Set internal versioning
+scoreboard players set #goldark_target_version goldark.dummy 4
+
+## Update versioning
+execute unless score #goldark_version goldark.dummy = #goldark_target_version goldark.dummy run function goldark:__core/utils/update_version
