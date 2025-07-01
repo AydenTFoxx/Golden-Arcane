@@ -3,6 +3,7 @@
         "villager",
         "iron_golem",
         "snow_golem",
-        "wolf"
+        "wolf",
+        "player"
     ]
 }
