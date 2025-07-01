@@ -17,7 +17,7 @@ execute if score @s goldark.ability_timer matches 60.. run particle smoke ~ ~ ~ 
 
 # Heal nearest player
 execute if score @s goldark.ability_timer matches 20.. unless entity @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..8] facing entity @p[distance=..16] feet run tp @s ^ ^0.1 ^0.25
-execute if score @s goldark.ability_timer matches 20.. unless entity @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..8] run effect give @p[distance=..1] regeneration 4 1 true
+execute if score @s goldark.ability_timer matches 20.. unless entity @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..8] run effect give @p[distance=..1] regeneration 4 1
 
 execute if score @s goldark.ability_timer matches 20.. unless entity @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..8] if entity @p[distance=..1] run scoreboard players set @s goldark.ability_timer 200
 
