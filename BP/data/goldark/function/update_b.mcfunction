@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-07-01
+## * AydenTFoxx @ 2025-06-18 .. 2025-07-02
 ## * 
 ## * Updates all features of the datapack at a custom rate.
 
@@ -15,12 +15,6 @@ scoreboard players remove @a[scores={ goldark.ability_timer=1.. }] goldark.abili
 tag @a[tag=goldark.magic_sickness, scores={ goldark.ability_timer=..0 }] remove goldark.magic_sickness
 
 scoreboard players reset @a[scores={ goldark.ability_timer=..0 }] goldark.ability_timer
-
-
-##? MANA
-
-# Regenerate Mana
-execute as @a[scores={ goldark.mana=..19 }] unless score @s goldark.ability_timer matches 1.. run function goldark:spell/_utils/update_mana
 
 
 ##? SPELL

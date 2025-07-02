@@ -1,0 +1,42 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "q": "quartz",
+        "g": "glowstone_dust",
+        "p": [
+            "paper",
+            "sugar"
+        ]
+    },
+    "pattern": [
+        "qgq",
+        "gpg",
+        "qgq"
+    ],
+    "result": {
+        "id": "paper",
+        "components": {
+            "item_model": "filled_map",
+            "item_name": "Enable Settings Trigger",
+            "rarity": "uncommon",
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "debug.trigger_settings": true
+                    }
+                }
+            },
+            "consumable": {
+                "has_consume_particles": false,
+                "sound": "entity.villager.work_cartographer",
+                "on_consume_effects": [
+                    {
+                        "type": "play_sound",
+                        "sound": "entity.experience_orb.pickup"
+                    }
+                ]
+            }
+        }
+    },
+    "category": "equipment"
+}
