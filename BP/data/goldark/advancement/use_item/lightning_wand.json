@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "carrot_on_a_stick",
+                        "lightning_rod",
+                        "stick"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "lightning_wand": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:item/lightning_wand/zap_mob"
+    }
+}

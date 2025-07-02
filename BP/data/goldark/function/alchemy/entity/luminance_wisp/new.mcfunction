@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ { Tags: [ "goldark.entity.luminance_wisp" ] }

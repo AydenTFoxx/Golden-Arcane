@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "obtain_ingredient": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "potion",
+                            "glass_bottle"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "glowstone_dust",
+                            "blaze_powder"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:potion/luminance"
+        ]
+    }
+}

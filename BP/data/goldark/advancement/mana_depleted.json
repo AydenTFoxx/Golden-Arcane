@@ -1,0 +1,22 @@
+{
+    "parent": "goldark:_root",
+    "display": {
+        "title": "Beware the Magic!",
+        "description": "Fully deplete your Mana, and face its consequences",
+        "icon": {
+            "id": "lapis_lazuli"
+        },
+        "hidden": true
+    },
+    "criteria": {
+        "depleted_mana": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 4,
+        "recipes": [
+            "goldark:potion/mana"
+        ]
+    }
+}

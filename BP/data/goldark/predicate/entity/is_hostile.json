@@ -1,0 +1,37 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "#goldark:hostile"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "targeted_entity": {
+                    "type": "#goldark:player_allies"
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "reference",
+                    "name": "goldark:entity/is_vulnerable"
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{ Tags: [ goldark.is_hostile ] }"
+                    }
+                }
+            ]
+        }
+    ]
+}

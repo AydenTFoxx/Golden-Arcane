@@ -1,0 +1,38 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "potion",
+        "gold_nugget",
+        "glowstone_dust"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "custom_name": {
+                "text": "Potion of Mana",
+                "italic": false
+            },
+            "potion_contents": {
+                "custom_color": 2345678,
+                "custom_effects": [
+                    {
+                        "id": "absorption",
+                        "duration": 100
+                    }
+                ]
+            },
+            "enchantment_glint_override": true,
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "potion_mana": true
+                    }
+                }
+            },
+            "use_cooldown": {
+                "seconds": 1.6,
+                "cooldown_group": "goldark:potions/mana"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "display": {
+        "title": {
+            "text": "Golden Arcane",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "The Mod of Golden Light",
+            "color": "yellow"
+        },
+        "icon": {
+            "id": "gold_ingot",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        },
+        "announce_to_chat": false,
+        "show_toast": false,
+        "background": "block/quartz_bricks"
+    },
+    "criteria": {
+        "load_world": {
+            "trigger": "impossible"
+        },
+        "obtain_gold": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "gold_ingot",
+                            "gold_block",
+                            "gold_nugget"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "load_world",
+            "obtain_gold"
+        ]
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": "gold_ingot",
+        "d": "glowstone_dust",
+        "R": "redstone"
+    },
+    "pattern": [
+        "Gd",
+        "dR"
+    ],
+    "result": {
+        "id": "sheep_spawn_egg",
+        "components": {
+            "item_name": {
+                "text": "Imperial Catalyst"
+            },
+            "item_model": "red_dye",
+            "rarity": "uncommon",
+            "lore": [
+                {
+                    "translate": "Use to activate %s type spells.",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "text": "Imperial",
+                            "color": "yellow"
+                        }
+                    ]
+                }
+            ],
+            "enchantment_glint_override": true,
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "spell_catalyst": true
+                    }
+                }
+            },
+            "entity_data": {
+                "id": "marker",
+                "Tags": [ "goldark.entity.spell_catalyst" ],
+                "data": {
+                    "goldark": {
+                        "spell_catalyst": {
+                            "type": {
+                                "imperial": true
+                            },
+                            "name": "Imperial",
+                            "model": "red_dye"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "group": "goldark:spell_catalysts"
+}

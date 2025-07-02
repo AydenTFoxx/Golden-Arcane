@@ -1,0 +1,41 @@
+{
+    "title": "Golden Arcane",
+    "external_title": "GOLDARK",
+    "type": "multi_action",
+    "body": {
+        "type": "plain_message",
+        "contents": {
+            "translate": "%s is a datapack by %s.",
+            "with": [
+                {
+                    "text": "Golden Arcane",
+                    "color": "aqua"
+                },
+                {
+                    "text": "Lumenfuchs Studios",
+                    "color": "yellow"
+                }
+            ]
+        }
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": "Open in Modrinth",
+            "action": {
+                "type": "open_url",
+                "url": "https://modrinth.com/mod/goldark"
+            }
+        },
+        {
+            "label": "Open in GitHub",
+            "action": {
+                "type": "open_url",
+                "url": "https://github.com/LumenfuchsStudios/Golden-Arcane"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "Exit"
+    }
+}

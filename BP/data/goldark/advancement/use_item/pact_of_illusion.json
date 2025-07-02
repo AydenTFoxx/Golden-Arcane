@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "paper",
+                        "book",
+                        "knowledge_book"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "pact_of_illusion": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:effect/immunity_divine"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "obtain_ingredient": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "potion",
+                            "glass_bottle"
+                        ]
+                    },
+                    {
+                        "items": [
+                            "gold_ingot",
+                            "gold_nugget"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:potion/mana"
+        ]
+    }
+}

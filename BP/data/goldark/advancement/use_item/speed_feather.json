@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "carrot_on_a_stick",
+                        "shears",
+                        "feather"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "speed_feather": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:item/speed_feather/apply_speed"
+    }
+}
