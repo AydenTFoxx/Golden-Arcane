@@ -1,0 +1,71 @@
+{
+    "anvil_cost": 1,
+    "description": {
+        "text": "Decaying",
+        "color": "red"
+    },
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 2
+    },
+    "max_cost": {
+        "base": 20,
+        "per_level_above_first": 5
+    },
+    "max_level": 5,
+    "weight": 4,
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#enchantable/weapon",
+    "primary_items": "#enchantable/sharp_weapon",
+    "exclusive_set": "#exclusive_set/damage",
+    "effects": {
+        "item_damage": [
+            {
+                "effect": {
+                    "type": "multiply",
+                    "factor": {
+                        "type": "linear",
+                        "base": 1.1,
+                        "per_level_above_first": 1.1
+                    }
+                }
+            }
+        ],
+        "block_experience": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": {
+                        "type": "linear",
+                        "base": 0.1,
+                        "per_level_above_first": 0.1
+                    }
+                }
+            }
+        ],
+        "attributes": [
+            {
+                "id": "goldark:decaying_curse/attack_speed",
+                "attribute": "attack_speed",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.25
+                },
+                "operation": "add_multiplied_base"
+            },
+            {
+                "id": "goldark:decaying_curse/sweeping_damage_ratio",
+                "attribute": "sweeping_damage_ratio",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.5,
+                    "per_level_above_first": 0.5
+                },
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

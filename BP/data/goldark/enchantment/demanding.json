@@ -1,5 +1,5 @@
 {
-    "anvil_cost": 1,
+    "anvil_cost": 2,
     "description": {
         "text": "Demanding",
         "color": "red"
@@ -13,7 +13,7 @@
         "per_level_above_first": 5
     },
     "max_level": 3,
-    "weight": 1,
+    "weight": 2,
     "slots": [
         "mainhand"
     ],
@@ -29,18 +29,6 @@
                         "base": 1.34,
                         "per_level_above_first": 0.33
                     }
-                },
-                "requirements": {
-                    "condition": "minecraft:value_check",
-                    "value": {
-                        "type": "minecraft:score",
-                        "score": "goldark.health_player",
-                        "target": "attacker",
-                        "scale": 1
-                    },
-                    "range": {
-                        "min": 4
-                    }
                 }
             }
         ],
@@ -52,14 +40,18 @@
                     "type": "all_of",
                     "effects": [
                         {
-                            "type": "apply_mob_effect",
-                            "min_amplifier": 0,
-                            "max_amplifier": 0,
-                            "min_duration": 2,
-                            "max_duration": 4,
-                            "to_apply": [
-                                "wither"
-                            ]
+                            "type": "damage_entity",
+                            "damage_type": "goldark:sacrificial",
+                            "min_damage": {
+                                "type": "linear",
+                                "base": 1,
+                                "per_level_above_first": 1
+                            },
+                            "max_damage": {
+                                "type": "linear",
+                                "base": 2,
+                                "per_level_above_first": 1
+                            }
                         },
                         {
                             "type": "play_sound",
@@ -92,7 +84,14 @@
                         "scale": 1
                     },
                     "range": {
-                        "min": 4
+                        "min": {
+                            "type": "minecraft:enchantment_level",
+                            "amount": {
+                                "type": "linear",
+                                "base": 3,
+                                "per_level_above_first": 1
+                            }
+                        }
                     }
                 }
             },
@@ -100,31 +99,57 @@
                 "affected": "victim",
                 "enchanted": "attacker",
                 "effect": {
-                    "type": "spawn_particles",
-                    "particle": {
-                        "type": "dust",
-                        "color": 9505815,
-                        "scale": 1.0
-                    },
-                    "horizontal_position": {
-                        "type": "entity_position",
-                        "offset": 0.0,
-                        "scale": 1.0
-                    },
-                    "horizontal_velocity": {
-                        "base": 0.1,
-                        "movement_scale": 0.2
-                    },
-                    "vertical_position": {
-                        "type": "entity_position",
-                        "offset": 1.0,
-                        "scale": 1.0
-                    },
-                    "vertical_velocity": {
-                        "base": 0.2,
-                        "movement_scale": 0.3
-                    },
-                    "speed": 0.15
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "apply_mob_effect",
+                            "min_amplifier": 0,
+                            "max_amplifier": {
+                                "type": "linear",
+                                "base": 1,
+                                "per_level_above_first": 1
+                            },
+                            "min_duration": {
+                                "type": "linear",
+                                "base": 0,
+                                "per_level_above_first": 2
+                            },
+                            "max_duration": {
+                                "type": "linear",
+                                "base": 0,
+                                "per_level_above_first": 4
+                            },
+                            "to_apply": [
+                                "weakness",
+                                "poison"
+                            ]
+                        },
+                        {
+                            "type": "spawn_particles",
+                            "particle": {
+                                "type": "smoke"
+                            },
+                            "horizontal_position": {
+                                "type": "entity_position",
+                                "offset": 0.0,
+                                "scale": 1.0
+                            },
+                            "horizontal_velocity": {
+                                "base": 0.1,
+                                "movement_scale": 0.2
+                            },
+                            "vertical_position": {
+                                "type": "entity_position",
+                                "offset": 1.0,
+                                "scale": 1.0
+                            },
+                            "vertical_velocity": {
+                                "base": 0.2,
+                                "movement_scale": 0.3
+                            },
+                            "speed": 0.15
+                        }
+                    ]
                 },
                 "requirements": {
                     "condition": "minecraft:value_check",
@@ -135,7 +160,14 @@
                         "scale": 1
                     },
                     "range": {
-                        "min": 4
+                        "min": {
+                            "type": "minecraft:enchantment_level",
+                            "amount": {
+                                "type": "linear",
+                                "base": 3,
+                                "per_level_above_first": 1
+                            }
+                        }
                     }
                 }
             }

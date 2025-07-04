@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-30 .. 2025-07-01
+## * AydenTFoxx @ 2025-06-30 .. 2025-07-04
 ## * 
 ## * Seals the nearest spell into the Scroll, allowing for later re-use.
 
@@ -8,7 +8,7 @@ execute if data entity @s data.goldark.StoredSpell.Tags run return run function 
 
 
 # Grant advancement
-advancement grant @p[distance=..16] only goldark:use_spell_essence seal_spell
+advancement grant @p[distance=..16] only goldark:use_essence seal_spell
 
 # Convert Spell entity to wisp (mobile; follows player)
 execute as @n[type=#goldark:technical, tag=goldark.is_spell, tag=!goldark.is_essence, distance=..1] run function goldark:entity/spell_essence/utils/convert_to_wisp
