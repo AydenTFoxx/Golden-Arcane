@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-19
+## * AydenTFoxx @ 2025-06-19 .. 2025-07-04
 ## * 
 ## * ZAP!
 
@@ -13,7 +13,7 @@ execute if entity @s[tag=goldark.magic_sickness] run return fail
 
 
 # Set cooldown
-scoreboard players set @s goldark.ability_timer 5
+scoreboard players set @s goldark.ability_timer 4
 
 tag @s add goldark.magic_sickness
 

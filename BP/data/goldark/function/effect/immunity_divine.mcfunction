@@ -1,6 +1,8 @@
 ## * AydenTFoxx @ 2025-06-26
 ## * 
-## * Grants the user temporary immunity to being attacked by Divine spells.
+## * Grants and ticks the Divine Immunity custom effect for players.
+## * 
+## * Divine Immunity prevents the player from being attacked by spells targeting hostile entities.
 
 #? On Use: Pact of Illusion
 #? Grants Effect: Divine Immunity

@@ -5,48 +5,60 @@
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#candles",
-                    "state": {
-                        "lit": "true"
-                    }
+                    "blocks": "enchanting_table"
                 }
-            },
-            "offsetX": 1
+            }
         },
         {
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#candles",
+                    "blocks": "redstone_torch",
                     "state": {
                         "lit": "true"
                     }
                 }
             },
-            "offsetX": -1
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": "#candles",
-                    "state": {
-                        "lit": "true"
-                    }
-                }
-            },
+            "offsetX": 1,
             "offsetZ": 1
         },
         {
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#candles",
+                    "blocks": "redstone_torch",
                     "state": {
                         "lit": "true"
                     }
                 }
             },
+            "offsetX": 1,
+            "offsetZ": -1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": 1
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": -1,
             "offsetZ": -1
         }
     ]

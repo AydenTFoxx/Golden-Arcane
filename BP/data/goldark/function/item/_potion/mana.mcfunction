@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-01
+## * AydenTFoxx @ 2025-07-01 .. 2025-07-04
 ## * 
 ## * Gives the player a Potion of Mana.
 
@@ -9,5 +9,6 @@ give @s potion[ \
     potion_contents={ custom_color: 2345678, custom_effects: [ { id: "absorption", duration: 100 } ] }, \
     custom_name={ text: "Potion of Mana", italic: false }, \
     enchantment_glint_override=true, \
-    use_cooldown={ seconds: 1.6, cooldown_group: "goldark:potions/mana" } \
+    use_cooldown={ seconds: 1.6, cooldown_group: "goldark:potions/mana" }, \
+    max_stack_size=16 \
 ]

@@ -20,8 +20,11 @@ data modify entity @s data.goldark.StoredSpell.CustomName set from entity @n[typ
 data modify entity @s data.goldark.StoredSpell.data set from entity @n[type=#goldark:technical, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] data
 
 # Get width and height (if entity is minecraft:interaction)
-execute if entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] run data modify entity @s data.goldark.StoredSpell.width set from entity @n[type=#goldark:technical, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] width
-execute if entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] run data modify entity @s data.goldark.StoredSpell.height set from entity @n[type=#goldark:technical, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] height
+execute if entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] run data modify entity @s data.goldark.StoredSpell.width set from entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] width
+execute if entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] run data modify entity @s data.goldark.StoredSpell.height set from entity @n[type=interaction, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] height
+
+# Get ExplosionPower (if spell is Fireball)
+execute if entity @n[type=fireball, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] run data modify entity @s data.goldark.StoredSpell.ExplosionPower set from entity @n[type=fireball, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] ExplosionPower
 
 # Get Spell name
 data modify entity @s data.goldark.name set from entity @n[type=#goldark:technical, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] CustomName

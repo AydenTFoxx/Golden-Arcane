@@ -19,6 +19,8 @@
         "#stairs",
         "#slabs",
         "#saplings",
+        "#trapdoors",
+        "#leaves",
         "lever",
         "torch",
         "wall_torch",

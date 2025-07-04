@@ -32,7 +32,8 @@
             "use_cooldown": {
                 "seconds": 1.6,
                 "cooldown_group": "goldark:potions/mana"
-            }
+            },
+            "max_stack_size": 16
         }
     }
 }
