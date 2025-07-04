@@ -13,7 +13,7 @@
                         "custom_data": {
                             "goldark": {
                                 "items": {
-                                    "debug.trigger_settings": true
+                                    "debug.toggle_datapack": true
                                 }
                             }
                         }
@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "goldark:_debug/trigger_settings"
+        "function": "goldark:__core/utils/toggle_datapack"
     }
 }

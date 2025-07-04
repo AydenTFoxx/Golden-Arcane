@@ -8,4 +8,4 @@
 
 
 # Send message
-$tellraw @s [ { text: "[ ", color: "gray" }, { text: "@GOLDARK: ", color: "gold", hover_event: { action: "show_text", value: { text: "Golden Arcane", color: "aqua" } }, click_event: { action: "show_dialog", dialog: "goldark:golden_arcane" } }, { text: "$(message)", color: "$(color)" }, { text: " ]", color: "gray" } ]
+$tellraw @s [ { text: "[ ", color: "gray" }, { text: "@GOLDARK: ", color: "gold", hover_event: { action: "show_text", value: { text: "Golden Arcane", color: "aqua" } } }, { text: "$(message)", color: "$(color)" }, { text: " ]", color: "gray" } ]

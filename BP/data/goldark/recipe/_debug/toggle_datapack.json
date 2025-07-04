@@ -3,38 +3,39 @@
     "key": {
         "q": "quartz",
         "g": "glowstone_dust",
-        "p": [
-            "paper",
-            "sugar"
+        "E": [
+            "redstone_block",
+            "iron_block"
         ]
     },
     "pattern": [
         "qgq",
-        "gpg",
+        "gEg",
         "qgq"
     ],
     "result": {
         "id": "paper",
         "components": {
-            "item_model": "filled_map",
-            "item_name": "Enable Settings Trigger",
-            "rarity": "uncommon",
+            "item_model": "structure_void",
+            "item_name": "Toggle Datapack (goldark)",
+            "rarity": "epic",
+            "enchantment_glint_override": true,
             "lore": [
                 {
-                    "text": "Grants access Golden Arcane's settings panel.",
-                    "italic": false,
-                    "color": "gray"
+                    "text": "[Debug Item]",
+                    "color": "blue",
+                    "italic": false
                 },
                 {
-                    "text": "Use this only if you're not hosting the world.",
-                    "italic": false,
-                    "color": "yellow"
+                    "text": "Toggles all behaviors of the datapack globally.",
+                    "color": "gray",
+                    "italic": false
                 }
             ],
             "custom_data": {
                 "goldark": {
                     "items": {
-                        "debug.trigger_settings": true
+                        "debug.toggle_datapack": true
                     }
                 }
             },
@@ -44,7 +45,7 @@
                 "on_consume_effects": [
                     {
                         "type": "play_sound",
-                        "sound": "entity.experience_orb.pickup"
+                        "sound": "block.portal.trigger"
                     }
                 ]
             }

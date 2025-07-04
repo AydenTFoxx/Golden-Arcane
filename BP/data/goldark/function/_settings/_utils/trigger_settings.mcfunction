@@ -4,7 +4,7 @@
 
 
 # Revoke advancement trigger
-advancement revoke @s only goldark:use_item/debug/trigger_settings
+advancement revoke @s only goldark:use_item/trigger_settings
 
 
 # Attempt to enable settings trigger
