@@ -21,14 +21,14 @@
             "rarity": "uncommon",
             "lore": [
                 {
-                    "text": "Grants access Golden Arcane's settings panel.",
+                    "text": "Grants access to Golden Arcane's settings panel.",
                     "italic": false,
                     "color": "gray"
                 },
                 {
-                    "text": "Use this only if you're not hosting the world.",
+                    "text": "Has no effect on the host of a LAN world.",
                     "italic": false,
-                    "color": "yellow"
+                    "color": "gold"
                 }
             ],
             "custom_data": {
