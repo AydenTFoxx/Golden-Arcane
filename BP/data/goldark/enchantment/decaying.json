@@ -1,9 +1,6 @@
 {
     "anvil_cost": 1,
-    "description": {
-        "text": "Decaying",
-        "color": "red"
-    },
+    "description": "Decaying",
     "min_cost": {
         "base": 5,
         "per_level_above_first": 2
