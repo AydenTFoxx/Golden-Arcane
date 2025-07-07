@@ -1,0 +1,6 @@
+{
+    "death.attack.goldark:sacrificial": "%s was consumed by Sacrificial magic.",
+    "death.attack.goldpaths:deferred": "%s shapeshifted into a corpse.",
+    "death.attack.goldpaths:deferred.player": "%s was banished to immaterial planes by %s.",
+    "death.attack.goldpaths:deferred.item": "%s was banished to immaterial planes by %s using %s."
+}
