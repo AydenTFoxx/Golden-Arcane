@@ -16,7 +16,6 @@
     ],
     "supported_items": "#enchantable/weapon",
     "primary_items": "#enchantable/sharp_weapon",
-    "exclusive_set": "#exclusive_set/damage",
     "effects": {
         "item_damage": [
             {
@@ -58,8 +57,8 @@
                 "attribute": "sweeping_damage_ratio",
                 "amount": {
                     "type": "linear",
-                    "base": 0.5,
-                    "per_level_above_first": 0.5
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
                 },
                 "operation": "add_multiplied_base"
             }
