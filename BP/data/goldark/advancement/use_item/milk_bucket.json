@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "vanilla_use_item": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "milk_bucket"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:effect/_remove_all"
+    }
+}
