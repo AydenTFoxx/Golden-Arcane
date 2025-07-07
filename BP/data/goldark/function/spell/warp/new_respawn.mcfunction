@@ -12,7 +12,7 @@
 #? Cost: High
 # 
 #? Is AoE?: No
-#? Is persistent: Yes (One-use)
+#? Is persistent?: Yes (One-use)
 # 
 ## --------- END OF DATA ---------- ##
 

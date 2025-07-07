@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-26 .. 2025-07-02
+## * AydenTFoxx @ 2025-06-26 .. 2025-07-07
 ## * 
 ## * Updates the datapack with applicable compatibility fixes for earlier versions.
 ## * 
@@ -6,6 +6,10 @@
 
 
 ## FIXES
+
+# [4 -> 5] Remove unused fake player
+scoreboard players reset #goldark_tick_rate goldark.dummy
+
 
 # Major release fixes will be here upon releasing the datapack.
 

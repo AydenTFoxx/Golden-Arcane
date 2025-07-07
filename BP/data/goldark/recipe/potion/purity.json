@@ -1,0 +1,38 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "honey_bottle",
+        "glistering_melon_slice",
+        "blaze_powder",
+        "diamond",
+        "redstone"
+    ],
+    "result": {
+        "id": "potion",
+        "components": {
+            "custom_name": {
+                "text": "Potion of Purity",
+                "italic": false
+            },
+            "potion_contents": {
+                "custom_color": 7793855
+            },
+            "lore": [
+                {
+                    "text": "- Nullifies one's Arcane Path, revoking it forever.",
+                    "italic": false,
+                    "color": "gray"
+                }
+            ],
+            "enchantment_glint_override": true,
+            "rarity": "uncommon",
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "potion_purity": true
+                    }
+                }
+            }
+        }
+    }
+}

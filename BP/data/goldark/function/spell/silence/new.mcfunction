@@ -8,7 +8,7 @@
 #? Cost: Medium
 # 
 #? Is AoE?: Yes (16)
-#? Is persistent: Yes
+#? Is persistent?: Yes
 # 
 ## --------- END OF DATA ---------- ##
 

@@ -3,13 +3,6 @@
 ## * Executes the datapack's behaviors at a custom tick rate.
 
 
-##? GLOBAL VALUES
-# Values which must be updated every tick; For usage by relevant modules.
-
-##// Daytime (superseded by predicate "goldark:location/is_daytime")
-#//execute store result score #goldark_daytime goldark.dummy run time query daytime
-
-
 ##? GOLDARK CLOCK
 # The core and heart of Golden Arcane's update execution.
 

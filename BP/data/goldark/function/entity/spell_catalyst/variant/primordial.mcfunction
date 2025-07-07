@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-28 .. 2025-06-30
+## * AydenTFoxx @ 2025-06-28 .. 2025-07-06
 ## * 
 ## * Updates all behaviors related to the Primordial variant of the Magic Catalyst.
 
@@ -7,4 +7,4 @@
 particle large_smoke ~ ~0.5 ~ 0.0 0.0 0.0 0.01 1
 
 # Verify spells
-execute if block ~ ~ ~ #fire if function goldark:spell/__database/primordial run return run function goldark:entity/spell_catalyst/utils/destroy
+execute if function goldark:spell/__database/primordial run return run function goldark:entity/spell_catalyst/utils/destroy

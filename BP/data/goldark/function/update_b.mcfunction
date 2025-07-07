@@ -19,6 +19,9 @@ scoreboard players reset @a[scores={ goldark.ability_timer=..0 }] goldark.abilit
 
 ##? SPELL
 
+## Banishment
+execute as @e[type=marker, tag=goldark.entity.spell_banish] at @s if loaded ~ ~ ~ run function goldark:spell/banish/update
+
 ## Deflect
 execute as @e[type=marker, tag=goldark.entity.spell_deflect] at @s if loaded ~ ~ ~ run function goldark:spell/deflect/update
 

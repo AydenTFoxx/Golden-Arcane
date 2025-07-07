@@ -2,7 +2,8 @@
     "values": [
         "#goldark:technical",
         "#goldark:boss",
-        "#undead",
-        "warden"
+        "player",
+        "warden",
+        "wolf"
     ]
 }

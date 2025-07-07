@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-07-02
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-06
 ## * 
 ## * Loads all required features for the datapack's functioning.
 
@@ -55,21 +55,24 @@ scoreboard objectives add goldark.settings trigger { text: "GOLDARK Settings", c
 execute unless data storage goldark:settings { init: true } run function goldark:_settings/_utils/reset_settings
 
 
-# Set datapack tick rate
-execute unless score #goldark_tick_rate goldark.dummy matches 1.. run scoreboard players set #goldark_tick_rate goldark.dummy 2
-
 # Set initial GUID
 execute unless score #goldark_guid goldark.guid matches 1.. run scoreboard players set #goldark_guid goldark.guid 1
 
+# Set modulus operator for Moon phase calculation
+execute unless score #goldark_moon_operator goldark.dummy matches 1.. run scoreboard players set #goldark_moon_operator goldark.dummy 8
 
-## Enable settings trigger for all players
+
+## Initialize value updater
+function goldark:__core/utils/update_values
+
+## Enable settings trigger for all online players
 scoreboard players enable @a goldark.settings
 
 
 ##? VERSIONING
 
 ## Set internal versioning
-scoreboard players set #goldark_target_version goldark.dummy 4
+scoreboard players set #goldark_target_version goldark.dummy 5
 
 ## Update versioning
 execute unless score #goldark_version goldark.dummy = #goldark_target_version goldark.dummy run function goldark:__core/utils/update_version
