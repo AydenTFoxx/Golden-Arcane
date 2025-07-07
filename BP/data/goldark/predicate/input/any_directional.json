@@ -1,0 +1,21 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "goldark:input/forward"
+        },
+        {
+            "condition": "reference",
+            "name": "goldark:input/backward"
+        },
+        {
+            "condition": "reference",
+            "name": "goldark:input/left"
+        },
+        {
+            "condition": "reference",
+            "name": "goldark:input/right"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "parent": "goldpaths:_root",
+    "display": {
+        "title": "The Werewoof",
+        "description": "A powerful beast, an unstoppable omen",
+        "icon": {
+            "id": "bone"
+        }
+    },
+    "criteria": {
+        "become_werewoof": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 8
+    }
+}

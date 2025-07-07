@@ -6,7 +6,7 @@
             "term": {
                 "condition": "time_check",
                 "value": {
-                    "min": 12400,
+                    "min": 13000,
                     "max": 23600
                 },
                 "period": 24000
