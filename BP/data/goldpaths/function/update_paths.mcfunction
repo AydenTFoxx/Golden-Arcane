@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-06
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-07
 ## * 
 ## * Updates entities with their relevant Golden Arcane Paths.
 
@@ -12,7 +12,7 @@ execute as @a[tag=goldpaths.perk_werewoof] if data entity @s { Health: 0.0f } ru
 ##? WEREWOOF
 
 # Player
-execute as @a[tag=goldpaths.is_werewoof] at @s run function goldpaths:werewoof/update_player
+execute as @a[tag=goldpaths.is_werewoof, tag=!goldark.effect.purity] at @s run function goldpaths:werewoof/update_player
 
 # Wolf (morph)
 execute as @e[type=wolf, tag=goldpaths.is_werewoof] at @s run function goldpaths:werewoof/update_wolf

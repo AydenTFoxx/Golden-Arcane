@@ -1,10 +1,10 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-06
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
 ## * 
 ## * Summons a new "Banishment" Spell entity.
 
 ## -------- SPELL METADATA -------- ##
 # 
-#? Type: Primordial (Light+Dark)
+#? Type: Eldritch (Dark+Blood)
 #? Cost: High
 # 
 #? Is AoE?: No

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-06
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
 ## * 
 ## * Updates the Werewoof user's behaviors and abilities.
 
@@ -39,7 +39,7 @@ execute unless function goldpaths:__utils/is_same_guid run return run function g
 title @s actionbar { translate: "%s Health: %s", color: "gray", with: [ { selector: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]" }, { entity: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]", nbt: "Health", color: "red" } ] }
 
 # Heal player
-execute if data entity @n[type=wolf, tag=goldpaths.is_werewoof, distance=..1] { Health: 20.0f } if score @s goldark.health_player matches ..19 run effect give @s regeneration 16 1
+execute if data entity @n[type=wolf, tag=goldpaths.is_werewoof, distance=..1] { Health: 20.0f } if score @s goldark.health_player matches ..19 run effect give @s regeneration 13 2
 
 
 # Rotate wolf as player

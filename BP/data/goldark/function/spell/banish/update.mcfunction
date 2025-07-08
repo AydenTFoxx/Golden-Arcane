@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-06
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
 ## * 
 ## * Updates the Banishment spell's effects and behavior.
 
@@ -27,7 +27,7 @@ function goldark:spell/banish/utils/display_ripple with entity @s data
 
 
 # Tag victim
-execute if score @s goldark.ability_timer matches 1 run data merge entity @n[type=!#goldark:immune_to_banishment, distance=..4] { HasVisualFire: 1b, NoAI: 1b, Tags: [ "goldark.banishment" ] }
+execute if score @s goldark.ability_timer matches 1 run data merge entity @n[type=!#goldark:immune_to_banishment, distance=..8] { HasVisualFire: 1b, NoAI: 1b, Tags: [ "goldark.banishment" ] }
 execute if score @s goldark.ability_timer matches 1 run data modify entity @n[type=!#goldark:immune_to_banishment, tag=goldark.banishment, distance=..8] Rotation[1] set value 0.0
 
 

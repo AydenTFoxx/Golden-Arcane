@@ -5,17 +5,6 @@
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "#candles",
-                    "state": {
-                        "lit": "true"
-                    }
-                }
-            }
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
                     "blocks": [
                         "obsidian",
                         "crying_obsidian",

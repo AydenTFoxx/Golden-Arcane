@@ -43,8 +43,11 @@ scoreboard players set @s goldark.ability_timer 100
 execute unless score @s goldark.ability_clock matches ..24 run effect give @s weakness 12 0
 
 
-# Revoke paths
-execute if entity @s[tag=goldpaths.is_werewoof] run function goldpaths:werewoof/utils/cure
+# Revoke perks
+execute if entity @s[tag=goldpaths.perk_werewoof] run function goldpaths:_perks/werewoof
+
+# De-transform player
+execute if entity @s[tag=goldpaths.is_werewoof, tag=goldpaths.is_transformed] run function goldpaths:werewoof/utils/revert
 
 
 ## END
