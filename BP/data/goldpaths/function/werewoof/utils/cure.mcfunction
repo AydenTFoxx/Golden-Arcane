@@ -1,13 +1,17 @@
-## * AydenTFoxx @ 2025-07-06
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-08
 ## * 
 ## * Removes the player's Arcane Path.
+
+
+## Ignore if not a woof
+execute unless entity @s[tag=goldpaths.is_werewoof] run return fail
 
 
 # Remove perk
 execute if entity @s[tag=goldpaths.perk_werewoof] run function goldpaths:_perks/werewoof
 
 # Revoke advancements
-advancement revoke @s from goldpaths:werewoof/_main
+advancement revoke @s from goldpaths:_root
 
 # Remove tags
 tag @s remove goldpaths.has_path

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-30
+## * AydenTFoxx @ 2025-06-23* .. 2025-07-08
 ## * 
 ## * Summons a new "Warp" Spell entity using the player's "respawn" NBT value.
 
@@ -9,7 +9,7 @@
 ## -------- SPELL METADATA -------- ##
 # 
 #? Type: Primordial (Light+Dark)
-#? Cost: High
+#? Cost: High (10 Mana)
 # 
 #? Is AoE?: No
 #? Is persistent?: Yes (One-use)

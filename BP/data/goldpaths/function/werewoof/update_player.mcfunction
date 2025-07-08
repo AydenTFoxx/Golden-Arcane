@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-08
 ## * 
 ## * Updates the Werewoof user's behaviors and abilities.
 
@@ -18,7 +18,7 @@ execute if items entity @s armor.* #goldpaths:hurts_werewoof run damage @s 2 in_
 
 
 ## Force-transform on a Full Moon (requires config)
-execute if data storage goldark:settings { goldpaths: { werewoof_force_transform: true } } \
+execute if data storage goldark:settings { werewoof_force_transform: true } \
         if score #goldark_moon_phase goldark.dummy matches 0 if entity @s[tag=!goldpaths.is_transformed] \
         if predicate goldark:location/can_see_sky unless predicate goldark:location/is_daytime run function goldpaths:werewoof/utils/transform
 
@@ -36,7 +36,8 @@ execute unless function goldpaths:__utils/is_same_guid run return run function g
 
 
 # Display Wolf health
-title @s actionbar { translate: "%s Health: %s", color: "gray", with: [ { selector: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]" }, { entity: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]", nbt: "Health", color: "red" } ] }
+execute if entity @n[type=wolf, tag=goldpaths.is_morph, tag=goldpaths.is_werewoof, tag=!goldpaths.rage_mode] run title @s actionbar { translate: "%s Health: %s", color: "gray", with: [ { selector: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]" }, { entity: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]", nbt: "Health", color: "red" } ] }
+execute if entity @n[type=wolf, tag=goldpaths.is_morph, tag=goldpaths.is_werewoof, tag=goldpaths.rage_mode] run title @s actionbar ["", { text: "[ Rage Mode is active. ] ", color: "red" }, { translate: "%s Health: %s", color: "gray", with: [ { selector: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]" }, { entity: "@n[type=wolf, tag=goldpaths.morph_werewoof, distance=..2]", nbt: "Health", color: "red" } ] }]
 
 # Heal player
 execute if data entity @n[type=wolf, tag=goldpaths.is_werewoof, distance=..1] { Health: 20.0f } if score @s goldark.health_player matches ..19 run effect give @s regeneration 13 2

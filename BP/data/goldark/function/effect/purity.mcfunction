@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-06 .. 2025-07-07
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-08
 ## * 
 ## * Grants the user the Purity effect, nullifying all other status effects for its duration.
 
@@ -16,7 +16,7 @@ advancement revoke @s only goldark:use_item/potion_purity
 execute unless entity @s[tag=goldark.effect.purity] run particle flash ~ ~1 ~ 0.1 0.2 0.1 0.05 1
 execute unless entity @s[tag=goldark.effect.purity] run particle portal ~ ~1 ~ 0.01 0.2 0.01 0.8 16
 
-execute unless entity @s[tag=goldark.effect.purity] run playsound block.portal.travel player @s ~ ~ ~ 1 0.67
+execute unless entity @s[tag=goldark.effect.purity] run playsound block.portal.trigger player @s ~ ~ ~ 1 0.67
 
 
 # Set duration
@@ -58,7 +58,7 @@ execute if score @s goldark.ability_clock matches ..0 run tag @s remove goldark.
 # Display ending effects
 execute if score @s goldark.ability_clock matches ..0 run particle gust ~ ~1 ~ 0.0 0.0 0.0 0.0 1
 
-execute if score @s goldark.ability_clock matches ..0 run playsound block.portal.trigger player @s ~ ~ ~ 1 0.8 0.2
+execute if score @s goldark.ability_clock matches ..0 run playsound block.beacon.deactivate player @s ~ ~ ~ 1 0.8 0.2
 
 # Reset score
 scoreboard players reset @s[scores={ goldark.ability_clock=..0 }] goldark.ability_clock

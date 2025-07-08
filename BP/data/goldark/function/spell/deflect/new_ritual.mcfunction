@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-30
+## * AydenTFoxx @ 2025-06-30 .. 2025-07-08
 ## * 
 ## * Invokes a new Deflect spell with an instantaneous effect.
 
@@ -8,7 +8,7 @@ execute if entity @n[type=marker, tag=goldark.entity.spell_deflect, distance=..1
 
 
 # Consume Mana
-execute as @p[distance=..8] run function goldark:spell/_utils/consume_mana { cost: 5 }
+execute as @p[distance=..8] run function goldark:spell/_utils/consume_mana { cost: 6 }
 
 # Summon Spell
 function goldark:spell/deflect/new

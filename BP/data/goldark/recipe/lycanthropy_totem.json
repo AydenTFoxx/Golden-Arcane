@@ -1,0 +1,42 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "T": [ "totem_of_undying", "enchanted_golden_apple" ],
+        "b": "bone",
+        "G": [ "gold_ingot", "emerald" ],
+        "q": "quartz"
+    },
+    "pattern": [
+        "bGb",
+        "qTq",
+        " G "
+    ],
+    "result": {
+        "id": "totem_of_undying",
+        "components": {
+            "item_name": "Totem of Lycanthropy",
+            "item_model": "bone",
+            "lore": [
+                {
+                    "text": "Curse of Lycanthropy",
+                    "italic": false,
+                    "color": "red"
+                },
+                {
+                    "text": "Saves you from death once, but at a cost.",
+                    "italic": false,
+                    "color": "gray"
+                }
+            ],
+            "enchantment_glint_override": true,
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "lycanthropy_totem": true
+                    }
+                }
+            }
+        }
+    },
+    "category": "equipment"
+}

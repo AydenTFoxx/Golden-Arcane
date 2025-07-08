@@ -1,11 +1,11 @@
-## * AydenTFoxx @ 2025-07-01
+## * AydenTFoxx @ 2025-07-01 .. 2025-07-08
 ## * 
 ## * Summons a new "Fireball" Spell entity.
 
 ## -------- SPELL METADATA -------- ##
 # 
 #? Type: Forbidden (Dark+Gold)
-#? Cost: Medium
+#? Cost: Medium (9 Mana)
 # 
 #? Is AoE?: No
 #? Is persistent?: Yes (One-use)

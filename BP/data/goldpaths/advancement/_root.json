@@ -20,7 +20,9 @@
     "rewards": {
         "experience": 12,
         "recipes": [
-            "goldark:potion/purity"
-        ]
+            "goldark:potion/purity",
+            "goldark:purity_totem"
+        ],
+        "function": "goldpaths:__utils/_on_path_conversion"
     }
 }

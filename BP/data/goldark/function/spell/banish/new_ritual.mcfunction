@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-08
 ## * 
 ## * Invokes a new Banishment spell with its respective ritual.
 
@@ -10,7 +10,7 @@ execute if entity @n[type=marker, tag=goldark.entity.spell_banish, distance=..4]
 execute unless entity @p[tag=goldpaths.is_werewoof, tag=!goldpaths.is_transformed, level=2.., distance=..8] run return fail
 
 ## Ignore if no mob is nearby
-execute unless entity @n[type=!#goldark:immune_to_banishment, distance=..4] run return fail
+execute unless entity @n[type=!#goldark:immune_to_banishment, distance=..8] run return fail
 
 
 # Consume EXP

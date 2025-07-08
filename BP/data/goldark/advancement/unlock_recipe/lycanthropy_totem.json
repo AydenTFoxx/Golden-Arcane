@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "obtain_ingredient": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "totem_of_undying",
+                            "enchanted_golden_apple"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:lycanthropy_totem"
+        ]
+    }
+}

@@ -1,6 +1,6 @@
 ## * AydenTFoxx @ 2025-07-02
 ## * 
-## * Toggles Verbose Mode.
+## * Toggles Debug Mode.
 
 ##? Note: Requires Developer or Operator privileges to work.
 

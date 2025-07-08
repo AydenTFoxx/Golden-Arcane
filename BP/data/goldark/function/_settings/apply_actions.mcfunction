@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-02
+## * AydenTFoxx @ 2025-07-02 .. 2025-07-08
 ## * 
 ## * Processes and executes the player's selected option in the settings menu panel.
 
@@ -11,6 +11,9 @@ tellraw @s { text: "" }
 
 # Graphics
 execute if score @s goldark.settings matches 1001 run function goldark:_settings/toggle/graphics
+
+# Werewoof Force Tranformation
+execute if score @s goldark.settings matches 1002 run function goldark:_settings/toggle/werewoof_force_transform
 
 
 # Debug Mode

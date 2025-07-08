@@ -20,6 +20,7 @@
         "shulker",
         "silverfish",
         "skeleton",
+        "skeleton_horse",
         "slime",
         "stray",
         "vex",
@@ -29,6 +30,7 @@
         "wither_skeleton",
         "zoglin",
         "zombie",
+        "zombie_horse",
         "zombified_piglin"
     ]
 }
