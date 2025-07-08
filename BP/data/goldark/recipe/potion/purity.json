@@ -3,9 +3,8 @@
     "ingredients": [
         "honey_bottle",
         "glistering_melon_slice",
-        "blaze_powder",
-        "diamond",
-        "redstone"
+        "fermented_spider_eye",
+        "glowstone_dust"
     ],
     "result": {
         "id": "potion",
@@ -19,11 +18,16 @@
             },
             "lore": [
                 {
-                    "text": "- Nullifies one's Arcane Path, revoking it forever.",
-                    "italic": false,
-                    "color": "gray"
+                    "text": "Purity (01:20)",
+                    "color": "red",
+                    "italic": false
                 }
             ],
+            "tooltip_display": {
+                "hidden_components": [
+                    "potion_contents"
+                ]
+            },
             "enchantment_glint_override": true,
             "rarity": "uncommon",
             "custom_data": {

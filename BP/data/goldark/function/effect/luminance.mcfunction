@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-01 .. 2025-07-01
+## * AydenTFoxx @ 2025-04-01 .. 2025-07-07
 ## * 
 ## * Grants and ticks the Luminance custom effect for players.
 ## * 
@@ -13,6 +13,9 @@
 
 # Reset trigger
 advancement revoke @s only goldark:use_item/potion_luminance
+
+# Ignore if player has Purity
+execute if entity @s[tag=goldark.effect.purity] run return fail
 
 
 # Display visual feedback

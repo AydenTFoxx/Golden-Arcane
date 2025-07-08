@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-06
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-07
 ## * 
 ## * Grants the user the Purity effect, nullifying all other status effects for its duration.
 
@@ -37,10 +37,10 @@ effect clear @s
 tag @s[tag=goldark.effect.luminance] remove goldark.effect.luminance
 
 # Set Magic Sickness
-scoreboard players set @s goldark.ability_timer 100
+scoreboard players set @s goldark.ability_timer 80
 
 # Set Weakness
-execute unless score @s goldark.ability_clock matches ..24 run effect give @s weakness 12 0
+execute unless score @s goldark.ability_clock matches ..0 run effect give @s weakness 12 0
 
 
 # Revoke perks
@@ -56,7 +56,7 @@ execute if entity @s[tag=goldpaths.is_werewoof, tag=goldpaths.is_transformed] ru
 execute if score @s goldark.ability_clock matches ..0 run tag @s remove goldark.effect.purity
 
 # Display ending effects
-execute if score @s goldark.ability_clock matches ..0 run particle gust ~ ~1 ~ 0.01 0.2 0.01 0.033 16
+execute if score @s goldark.ability_clock matches ..0 run particle gust ~ ~1 ~ 0.0 0.0 0.0 0.0 1
 
 execute if score @s goldark.ability_clock matches ..0 run playsound block.portal.trigger player @s ~ ~ ~ 1 0.8 0.2
 
