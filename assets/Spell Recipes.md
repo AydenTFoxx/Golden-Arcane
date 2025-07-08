@@ -80,13 +80,13 @@ Metadata:
 
 > Type: **`Divine`**  
 > Class: `Area-of-Effect`, `Persistent`  
-> Cost: 5 Mana
+> Cost: 6 Mana
 
 Ingredients:
 
 > 1x Candle  
 > 1x Bone  
-> 1x Gold Block  
+> 1x Iron Block  
 > 1x [Divine Catalyst](#divine-catalyst)
 
 Structure in-game:
@@ -109,7 +109,7 @@ Metadata:
 
 > Type: **`Divine`**  
 > Class: `Area-of-Effect`, `Persistent`  
-> Cost: 5 Mana
+> Cost: 7 Mana
 
 Ingredients:
 

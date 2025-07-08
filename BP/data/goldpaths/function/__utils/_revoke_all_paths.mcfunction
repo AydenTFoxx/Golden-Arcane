@@ -4,7 +4,7 @@
 
 
 # Reset trigger
-advancement revoke @s only goldpaths:_use_item/purity_totem
+advancement revoke @s only goldark:use_item/purity_totem
 
 # Revoke Death if player has no paths
 execute unless entity @s[tag=goldpaths.has_path] run return run effect clear @s
