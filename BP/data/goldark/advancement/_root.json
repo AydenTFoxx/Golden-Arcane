@@ -19,9 +19,6 @@
         "background": "block/quartz_bricks"
     },
     "criteria": {
-        "load_world": {
-            "trigger": "impossible"
-        },
         "obtain_gold": {
             "trigger": "inventory_changed",
             "conditions": {
@@ -36,11 +33,5 @@
                 ]
             }
         }
-    },
-    "requirements": [
-        [
-            "load_world",
-            "obtain_gold"
-        ]
-    ]
+    }
 }

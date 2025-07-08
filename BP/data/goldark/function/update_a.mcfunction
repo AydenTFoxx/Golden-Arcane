@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-07-01
+## * AydenTFoxx @ 2025-06-18 .. 2025-07-06
 ## * 
 ## * Updates all features of the datapack at a custom rate.
 
@@ -8,11 +8,14 @@
 
 ##? EFFECT
 
+## Divine Immunity
+execute as @a[tag=goldark.effect.immunity_divine] at @s run function goldark:effect/immunity_divine
+
 ## Luminance
 execute as @a[tag=goldark.effect.luminance] at @s run function goldark:effect/luminance
 
-## Divine Immunity
-execute as @a[tag=goldark.effect.immunity_divine] at @s run function goldark:effect/immunity_divine
+## Purity
+execute as @a[tag=goldark.effect.purity] at @s run function goldark:effect/purity
 
 ## Silence (Revoke)
 execute as @e[type=!#goldark:technical, tag=goldark.is_silenced] at @s unless entity @n[type=marker, tag=goldark.entity.spell_silence, distance=..16] run function goldark:spell/silence/utils/toggle_silence

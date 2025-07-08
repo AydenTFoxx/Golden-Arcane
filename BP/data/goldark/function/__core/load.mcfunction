@@ -1,6 +1,10 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-07-01
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-08
 ## * 
 ## * Loads all required features for the datapack's functioning.
+
+
+## Ignore until players are loaded
+execute unless entity @p run return run schedule function goldark:__core/load 20t
 
 
 ##? SCOREBOARDS
@@ -40,23 +44,35 @@ scoreboard objectives add goldark.mana dummy { text: "Mana", color: "light_purpl
 scoreboard objectives add goldark.health_player health { text: "Health (Player)", color: "dark_red" }
 
 
+## Settings (goldark)
+# A trigger objective for managing Golden Arcane's settings without Operator privileges.
+scoreboard objectives add goldark.settings trigger { text: "GOLDARK Settings", color: "yellow" }
+
+
 ##? FLAGS & VALUES
 
 ## Initialize default settings
-execute unless data storage goldark:settings { init: true } run data merge storage goldark:settings { graphics: "fancy", debug_mode: false, verbose_mode: true, init: true }
+execute unless data storage goldark:settings { init: true } run function goldark:_settings/_utils/reset_settings
 
-
-# Set datapack tick rate
-execute unless score #goldark_tick_rate goldark.dummy matches 1.. run scoreboard players set #goldark_tick_rate goldark.dummy 2
 
 # Set initial GUID
 execute unless score #goldark_guid goldark.guid matches 1.. run scoreboard players set #goldark_guid goldark.guid 1
+
+# Set modulus operator for Moon phase calculation
+execute unless score #goldark_moon_operator goldark.dummy matches 1.. run scoreboard players set #goldark_moon_operator goldark.dummy 8
+
+
+## Initialize value updater
+function goldark:__core/utils/update_values
+
+## Enable settings trigger for all online players
+scoreboard players enable @a goldark.settings
 
 
 ##? VERSIONING
 
 ## Set internal versioning
-scoreboard players set #goldark_target_version goldark.dummy 4
+scoreboard players set #goldark_target_version goldark.dummy 6
 
 ## Update versioning
 execute unless score #goldark_version goldark.dummy = #goldark_target_version goldark.dummy run function goldark:__core/utils/update_version

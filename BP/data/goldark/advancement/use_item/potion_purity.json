@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "drink_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "potion",
+                        "honey_bottle"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "potion_purity": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:effect/purity"
+    }
+}

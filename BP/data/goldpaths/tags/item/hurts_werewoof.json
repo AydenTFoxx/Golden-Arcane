@@ -1,0 +1,19 @@
+{
+    "values": [
+        "#goldpaths:buckets",
+        "#goldpaths:iron_armor",
+        "#goldpaths:iron_tools",
+        "#anvil",
+        "#iron_ores",
+        "cauldron",
+        "chain",
+        "heavy_weighted_pressure_plate",
+        "iron_bars",
+        "iron_block",
+        "iron_door",
+        "iron_trapdoor",
+        "lantern",
+        "soul_lantern",
+        "raw_iron_block"
+    ]
+}

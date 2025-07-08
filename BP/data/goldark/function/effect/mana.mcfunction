@@ -2,6 +2,9 @@
 ## * 
 ## * Grants the user some Mana, while also inflicting Magic Sickness.
 
+#? On Use: Potion of Mana
+#? Grants Effect: Instant Mana
+
 
 # Reset trigger
 advancement revoke @s only goldark:use_item/potion_mana

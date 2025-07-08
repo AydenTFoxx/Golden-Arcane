@@ -1,14 +1,14 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-06-30
+## * AydenTFoxx @ 2025-06-18 .. 2025-07-08
 ## * 
 ## * Summons a new "Ward" Spell entity.
 
 ## -------- SPELL METADATA -------- ##
 # 
 #? Type: Imperial (Light+Blood)
-#? Cost: Low
+#? Cost: Low (4 Mana, 3 EXP)
 # 
 #? Is AoE?: Yes (4)
-#? Is persistent: Yes
+#? Is persistent?: Yes
 # 
 ## --------- END OF DATA ---------- ##
 

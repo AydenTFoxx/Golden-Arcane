@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-28 .. 2025-06-30
+## * AydenTFoxx @ 2025-06-28 .. 2025-07-07
 ## * 
 ## * Updates all behaviors related to the Primordial variant of the Magic Catalyst.
 

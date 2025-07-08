@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "#coals",
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "purity_totem": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldpaths:__utils/_revoke_all_paths"
+    }
+}

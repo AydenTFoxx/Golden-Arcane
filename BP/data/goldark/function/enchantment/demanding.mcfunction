@@ -1,16 +1,9 @@
-## * AydenTFoxx @ 2025-06-20 .. 2025-06-25
+## * AydenTFoxx @ 2025-06-20 .. 2025-07-04
 ## * 
-## * Spawns Blood Wisps around the player, at the cost of EXP.
+## * Spawns Blood Wisps around the player, at the cost of heaçth.
 
 #? Triggered by: Demanding [Enchantment]
-#? Requires EXP: 5
-
-
-# Ignore if at level 0
-execute if entity @s[gamemode=!creative, level=0] run return fail
-
-# Take EXP
-xp add @s[gamemode=!creative] -5 points
+#? Requires Health: 1-2 (I); 2-3 (II); 3-4 (III)
 
 
 # Summon Blood Wisps

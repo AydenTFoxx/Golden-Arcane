@@ -1,22 +1,7 @@
 {
-    "condition": "all_of",
-    "terms": [
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "type": "#goldark:player_allies"
-            }
-        },
-        {
-            "condition": "inverted",
-            "term": {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "nbt": "{ Tags: [ goldark.is_hostile ] }"
-                }
-            }
-        }
-    ]
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "#goldark:player_allies"
+    }
 }

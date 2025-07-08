@@ -1,0 +1,32 @@
+{
+    "parent": "goldpaths:_root",
+    "display": {
+        "title": "The Werewoof",
+        "description": "A powerful beast, an unstoppable omen",
+        "icon": {
+            "id": "bone"
+        }
+    },
+    "criteria": {
+        "become_werewoof": {
+            "trigger": "used_totem",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "lycanthropy_totem": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 8,
+        "function": "goldpaths:werewoof/utils/convert"
+    }
+}

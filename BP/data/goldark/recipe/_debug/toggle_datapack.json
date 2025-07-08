@@ -1,0 +1,56 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "q": "quartz",
+        "g": "glowstone_dust",
+        "E": [
+            "redstone_block",
+            "iron_block"
+        ]
+    },
+    "pattern": [
+        "qgq",
+        "gEg",
+        "qgq"
+    ],
+    "result": {
+        "id": "paper",
+        "components": {
+            "item_model": "structure_void",
+            "item_name": "Toggle Datapack (goldark)",
+            "rarity": "epic",
+            "enchantment_glint_override": true,
+            "lore": [
+                {
+                    "text": "[Debug Item]",
+                    "color": "blue",
+                    "italic": false
+                },
+                {
+                    "text": "Toggles all behaviors of the datapack globally.",
+                    "color": "gray",
+                    "italic": false
+                }
+            ],
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "debug.toggle_datapack": true
+                    }
+                }
+            },
+            "consumable": {
+                "has_consume_particles": false,
+                "sound": "entity.villager.work_cartographer",
+                "on_consume_effects": [
+                    {
+                        "type": "play_sound",
+                        "sound": "block.portal.trigger"
+                    }
+                ]
+            }
+        }
+    },
+    "category": "equipment",
+    "group": "goldark:debug_items"
+}

@@ -1,0 +1,28 @@
+{
+    "parent": "goldpaths:werewoof/_main",
+    "display": {
+        "title": "Wolf Heritage",
+        "description": {
+            "translate": "Use %s to transform into a Wolf",
+            "color": "gray",
+            "with": [
+                {
+                    "text": "CTRL+S",
+                    "color": "yellow"
+                }
+            ]
+        },
+        "icon": {
+            "id": "wolf_spawn_egg"
+        },
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "transform_into_wolf": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 5
+    }
+}

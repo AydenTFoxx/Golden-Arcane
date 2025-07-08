@@ -1,0 +1,42 @@
+{
+    "parent": "goldark:mana_depleted",
+    "display": {
+        "title": "Forged by Blood",
+        "description": "Conjure a weapon of Blood with your own life essence",
+        "icon": {
+            "id": "iron_sword",
+            "components": {
+                "enchantment_glint_override": true
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "forge_blood_weapon": {
+            "trigger": "impossible"
+        },
+        "get_blood_weapon": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "iron_sword",
+                        "components": {
+                            "custom_data": {
+                                "goldark": {
+                                    "items": {
+                                        "blood_weapon": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 14
+    }
+}

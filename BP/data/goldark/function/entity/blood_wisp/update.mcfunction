@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-25
+## * AydenTFoxx @ 2025-06-23* .. 2025-07-03
 ## * 
 ## * Updates the Blood Wisp's behaviors and abilities.
 
@@ -30,7 +30,7 @@ damage @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distanc
 
 
 # Apply final damage
-execute if score @s goldark.ability_timer matches 100.. run damage @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..2] 2 on_fire by @s
+execute if score @s goldark.ability_timer matches 100.. run damage @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..2, sort=furthest] 2 indirect_magic by @s
 
 # Display death animation
 execute if score @s goldark.ability_timer matches 100.. run particle small_gust ~ ~ ~ 0.0 0.0 0.0 1.0 1

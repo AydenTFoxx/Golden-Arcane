@@ -1,14 +1,14 @@
-## * AydenTFoxx @ 2025-06-30
+## * AydenTFoxx @ 2025-06-30 .. 2025-07-08
 ## * 
 ## * Summons a new "Deflect" Spell entity.
 
 ## -------- SPELL METADATA -------- ##
 # 
 #? Type: Divine (Light+Gold)
-#? Cost: Low
+#? Cost: Low (6 Mana)
 # 
 #? Is AoE?: Yes (8)
-#? Is persistent: Yes
+#? Is persistent?: Yes
 # 
 ## --------- END OF DATA ---------- ##
 

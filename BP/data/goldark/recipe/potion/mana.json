@@ -12,6 +12,13 @@
                 "text": "Potion of Mana",
                 "italic": false
             },
+            "lore": [
+                {
+                    "text": "Instant Mana",
+                    "color": "blue",
+                    "italic": false
+                }
+            ],
             "potion_contents": {
                 "custom_color": 2345678,
                 "custom_effects": [
@@ -21,7 +28,11 @@
                     }
                 ]
             },
-            "enchantment_glint_override": true,
+            "tooltip_display": {
+                "hidden_components": [
+                    "potion_contents"
+                ]
+            },
             "custom_data": {
                 "goldark": {
                     "items": {
@@ -32,7 +43,8 @@
             "use_cooldown": {
                 "seconds": 1.6,
                 "cooldown_group": "goldark:potions/mana"
-            }
+            },
+            "max_stack_size": 16
         }
     }
 }

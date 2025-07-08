@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "use_debug_item": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "paper",
+                        "book",
+                        "knowledge_book"
+                    ],
+                    "components": {
+                        "custom_data": {
+                            "goldark": {
+                                "items": {
+                                    "debug.toggle_datapack": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:__core/utils/toggle_datapack"
+    }
+}

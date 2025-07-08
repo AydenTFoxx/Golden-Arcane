@@ -13,6 +13,7 @@
                 "text": "Potion of Luminance",
                 "italic": false
             },
+            "item_model": "honey_bottle",
             "rarity": "uncommon",
             "lore": [
                 {
@@ -28,6 +29,11 @@
                         "id": "glowing",
                         "duration": 3600
                     }
+                ]
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "potion_contents"
                 ]
             },
             "custom_data": {

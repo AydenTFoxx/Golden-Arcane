@@ -1,6 +1,6 @@
 ## * AydenTFoxx @ 2025-06-25 .. 2025-06-30
 ## * 
-## * Removes the Smite spell and returns its "waste" item.
+## * Removes the Ward spell and returns its "waste" item.
 
 
 ## Ignore until expired
