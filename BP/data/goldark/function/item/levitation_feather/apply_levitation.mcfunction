@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-27
+## * AydenTFoxx @ 2025-06-23* .. 2025-07-08
 ## * 
 ## * Ascends the user upwards, with a brief slow fall afterwards.
 
@@ -18,7 +18,7 @@ tag @s add goldark.magic_sickness
 
 # Grant levitation
 effect give @s levitation 1 4 true
-execute if items entity @s weapon.mainhand shears[custom_data={ goldark: { items: { levitation_feather: true } } }] if items entity @s weapon.offhand shears[custom_data={ goldark: { items: { levitation_feather: true } } }] \
+execute if items entity @s weapon.mainhand feather[custom_data={ goldark: { items: { levitation_feather: true } } }] if items entity @s weapon.offhand feather[custom_data={ goldark: { items: { levitation_feather: true } } }] \
         run effect give @s levitation 1 9 true
 
 # Grant slow fall
@@ -34,5 +34,5 @@ playsound entity.breeze.whirl player @a[distance=..16] ~ ~ ~ 0.8 1.2
 
 
 # Damage item
-execute if items entity @s[gamemode=!creative] weapon.mainhand shears[custom_data={ goldark: { items: { levitation_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 120 }
-execute if items entity @s[gamemode=!creative] weapon.offhand shears[custom_data={ goldark: { items: { levitation_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 120 }
+execute if items entity @s[gamemode=!creative] weapon.mainhand feather[custom_data={ goldark: { items: { levitation_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 120 }
+execute if items entity @s[gamemode=!creative] weapon.offhand feather[custom_data={ goldark: { items: { levitation_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 120 }

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-29
+## * AydenTFoxx @ 2025-06-29 .. 2025-07-08
 ## * 
 ## * Operates behaviors of the Locator Compass when used.
 
@@ -23,5 +23,5 @@ execute if score @s goldark.ability_timer matches 1.. run return fail
 scoreboard players set @s goldark.ability_timer 10
 
 # Damage item
-execute if items entity @s[gamemode=!creative] weapon.mainhand shears[custom_data~{ goldark: { items: { locator_compass: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 250 }
-execute if items entity @s[gamemode=!creative] weapon.offhand shears[custom_data~{ goldark: { items: { locator_compass: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 250 }
+execute if items entity @s[gamemode=!creative] weapon.mainhand recovery_compass[custom_data~{ goldark: { items: { locator_compass: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 250 }
+execute if items entity @s[gamemode=!creative] weapon.offhand recovery_compass[custom_data~{ goldark: { items: { locator_compass: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 250 }

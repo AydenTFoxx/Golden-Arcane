@@ -14,7 +14,7 @@
         " G "
     ],
     "result": {
-        "id": "shears",
+        "id": "recovery_compass",
         "components": {
             "item_name": {
                 "text": "Locator Compass"
@@ -34,6 +34,7 @@
                 "has_consume_particles": false,
                 "sound": "entity.breeze.whirl"
             },
+            "damage": 0,
             "max_damage": 250,
             "max_stack_size": 1,
             "lodestone_tracker": {}

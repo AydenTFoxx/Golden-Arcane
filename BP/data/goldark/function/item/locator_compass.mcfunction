@@ -1,10 +1,10 @@
-## * AydenTFoxx @ 2025-06-29
+## * AydenTFoxx @ 2025-06-29 .. 2025-07-08
 ## * 
 ## * Gives the user a Locator Compass.
 
 
 # Give item
-give @s shears[ \
+give @s recovery_compass[ \
     item_name={ text: "Locator Compass" }, \
     item_model="compass", \
     rarity="uncommon", \

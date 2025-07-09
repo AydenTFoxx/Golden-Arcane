@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-23* .. 2025-06-27
+## * AydenTFoxx @ 2025-06-23* .. 2025-07-08
 ## * 
 ## * Moves the user forward at great speeds, at the cost of quick durability drain.
 
@@ -18,7 +18,7 @@ tag @s add goldark.magic_sickness
 
 # Move forwards
 execute if block ^ ^0.2 ^0.75 #air run tp @s ^ ^0.2 ^0.75
-execute if items entity @s weapon.mainhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] if items entity @s weapon.offhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] \
+execute if items entity @s weapon.mainhand feather[custom_data={ goldark: { items: { speed_feather: true } } }] if items entity @s weapon.offhand feather[custom_data={ goldark: { items: { speed_feather: true } } }] \
         if block ^ ^0.25 ^1.5 #air run tp @s ^ ^0.25 ^1.5
 
 # Apply effects
@@ -35,5 +35,5 @@ playsound entity.breeze.slide player @a[distance=..16] ~ ~ ~ 0.8 1.2
 
 
 # Damage item
-execute if items entity @s[gamemode=!creative] weapon.mainhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 120 }
-execute if items entity @s[gamemode=!creative] weapon.offhand shears[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 120 }
+execute if items entity @s[gamemode=!creative] weapon.mainhand feather[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.mainhand", max_damage: 120 }
+execute if items entity @s[gamemode=!creative] weapon.offhand feather[custom_data={ goldark: { items: { speed_feather: true } } }] run function goldark:item/__utils/damage_item { slot: "weapon.offhand", max_damage: 120 }

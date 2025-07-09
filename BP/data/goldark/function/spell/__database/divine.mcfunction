@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-27 .. 2025-07-03
+## * AydenTFoxx @ 2025-06-27 .. 2025-07-08
 
 
 ##? DIVINE
@@ -11,4 +11,4 @@ execute if block ~ ~-1 ~ gold_block as @n[type=item, nbt={ Item: { id: "minecraf
 
 
 # Artifact: Locator Compass
-execute if entity @n[type=item, nbt={ Item: { id: "minecraft:shears", components: { "minecraft:custom_data": { goldark: { items: { locator_compass: true } } } } } }, distance=..1] run return run function goldark:item/locator_compass/utils/ritual_convert
+execute if entity @n[type=item, nbt={ Item: { id: "minecraft:recovery_compass", components: { "minecraft:custom_data": { goldark: { items: { locator_compass: true } } } } } }, distance=..1] run return run function goldark:item/locator_compass/utils/ritual_convert
