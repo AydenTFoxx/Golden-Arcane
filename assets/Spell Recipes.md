@@ -1,6 +1,6 @@
 # GOLDARK Spells Recipe Book
 
-Below is a full list of all registered Golden Arcane spells, as of 2025-07-08.
+Below is a full list of all registered *Golden Arcane* spells, as of 2025-07-08.
 
 ## Table of Contents
 
@@ -27,6 +27,7 @@ Below is a full list of all registered Golden Arcane spells, as of 2025-07-08.
     - [Forbidden Catalyst](#forbidden-catalyst)
     - [Eldritch Catalyst](#eldritch-catalyst)
     - [Sacrificial Catalyst](#sacrificial-catalyst)
+    - [Singularity Catalyst](#singularity-catalyst)
 
 ## List of Spells
 
@@ -67,10 +68,10 @@ Summary:
 
 > Warp Gate tears a hole in reality, connecting you to a recent location you have visited before. As of the creation of this document (see above), two variants are available:
 >
-> - By using regular *Fire* to activate the spell, it will link to your **last respawn point**, usually a bed or Respawn Anchor.
-> - By using **Soul Fire** to activate the spell, it will link to your **last death location**. This works across all dimensions, but does not protect you from your death cause, like lava or the Void.
+> - Using regular *Fire* to conjure the spell will link it to your **last respawn point**, usually a bed or Respawn Anchor.
+> - Using *Soul Fire* to conjure the spell will link it to your **last death location**. This works across all dimensions, but does not protect you from your death cause, like lava or the Void.
 >
-> Once activated, a Warp Gate remains indefinitely until used, after which it despawns itself. Warp Gates do not update their linked locations, so if you e.g. die to a Zombie, open a Gate, then die of fall damage, your first Gate will remain linked to the first death location, while all subsequent ones will link to the most recent death instead.
+> Once summoned, a Warp Gate lingers indefinitely until used, after which it despawns itself. Warp Gates also do not update their linked locations, so if you e.g. die to a Zombie, open a Gate, then die of fall damage, your first Gate will remain linked to the first death location, while all subsequent ones will link to the most recent death instead.
 
 ### Divine
 
@@ -95,7 +96,7 @@ Structure in-game:
 
 <summary>In-game screenshot</summary>
 
-![A candle with an iron block below and a Bone item above it.](recipes/spell/smite.png)
+![A candle with an iron block below and a Bone item above it.](recipes/spell/deflect.png)
 
 </details>
 
@@ -128,11 +129,11 @@ Structure in-game:
 
 </details>
 
-> Smite attacks hostile\* undead creatures in its radius, shooting a bolt of light magic which homes towards the nearest target. If no enemies are nearby, these bolts home towards the nearest passive\** entity instead, including the player.
+> Smite attacks hostile\* undead creatures in its radius, shooting a bolt of light which homes towards the nearest target. If no enemies are nearby, these bolts target and heal the nearest passive\*\* entity instead, including the player.
 >
 > Non-undead hostile entities are infliced with powerful Wither and Slowness effects instead.
 >
-> \* "Hostile" includes Skeleton and Zombie Horses, which are considered passive by the game.
+> \* "Hostile" includes Skeleton and Zombie Horses, which are considered passive by the game.  
 > \*\* "Passive" includes Iron Golems and Wolves, which are otherwise considered as Neutral by this datapack.
 
 ### Imperial
@@ -250,7 +251,7 @@ Summary:
 Metadata:
 
 > Type: **`Eldritch`**  
-> Class: `Single Target`, `Persistent`  
+> Class: `Single Target`, `One-Use`  
 > Cost: 15 Mana, 10 EXP
 
 Ingredients:
@@ -274,7 +275,7 @@ Summary:
 
 > Banish "locks" the nearest creature (that isn't a player) above itself, before consuming them wholly and erasing them from reality. Such is its power that all other creatures (including the player) in a large radius are debuffed as well, being weakened and blinded by the horrors just witnessed.
 >
-> Unfortunately (or not), Banishment's magic is only powerful enough to kill mobs with up to 100 health (50 hearts; same as an Iron Golem). The following creatures are immune to Banishment:
+> Unfortunately (or not), Banishment's magic is only powerful enough to kill mobs with up to 100 health (50 hearts; same as an Iron Golem). Thus, the following creatures are immune to Banishment:
 >
 > - All bosses (Ender Dragon, Wither)
 > - Warden
@@ -292,7 +293,7 @@ Summary:
 Metadata:
 
 > Type: **`Sacrificial`**  
-> Class: `Single Target`, `Persistent`  
+> Class: `One-Use`  
 > Cost: 5 Health, 7 EXP
 
 Ingredients:
@@ -322,11 +323,11 @@ Summary:
 
 ## List of Catalysts
 
-Below is a list of all Magic Catalysts in *Golden Arcane*. Catalysts awaken the dormant magic within, allowing a collection of mundane materials to become a powerful manifestation of magic; a spell.
+Below is a list of all Magic Catalysts in *Golden Arcane*. Catalysts awaken the dormant magic within, allowing a collection of mundane materials to become a powerful manifestation of magic; *ergo*, a spell.
 
 ### Primordial Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Ender Pearl](recipes/spell_catalyst/primordial.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Ender Pearl](recipes/spell_catalyst/primordial.png)
 
 Primordial Catalysts are capable of activating [Primordial](#primordial) spells; It is generally used on **Fire** blocks.
 
@@ -334,7 +335,7 @@ Usually, Primordial spells require a couple blocks for its "recipe", with the fi
 
 ### Divine Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Lapis Lazuli](recipes/spell_catalyst/divine.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Lapis Lazuli](recipes/spell_catalyst/divine.png)
 
 Divine Catalysts are capable of activating [Divine](#divine) spells; It is generally used on lit **Candle** blocks.
 
@@ -342,7 +343,7 @@ Usually, Divine spells require a lit candle and a block below it. Breaking the c
 
 ### Imperial Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Redstone](recipes/spell_catalyst/imperial.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Redstone](recipes/spell_catalyst/imperial.png)
 
 Imperial Catalysts are capable of activating [Imperial](#imperial) spells; It is generally used on lit **Candle** blocks.
 
@@ -352,7 +353,7 @@ As with Divine spells, breaking the candle will also expire the spell.
 
 ### Forbidden Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Fire Charge](recipes/spell_catalyst/forbidden.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Fire Charge](recipes/spell_catalyst/forbidden.png)
 
 Forbidden Catalysts are capable of activating [Forbidden](#forbidden) spells; It has no particular block attributed to its magic.
 
@@ -360,7 +361,7 @@ Usually, Forbidden spells require a wide range of blocks, most of which are cons
 
 ### Eldritch Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Eye of Ender](recipes/spell_catalyst/eldritch.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Eye of Ender](recipes/spell_catalyst/eldritch.png)
 
 Eldritch Catalysts are capable of activating [Eldritch](#eldritch) spells; It is generally used on **Skull** blocks.
 
@@ -370,7 +371,7 @@ Unlike Divine spells, breaking any of the blocks has no effect on the spell itse
 
 ### Sacrificial Catalyst
 
-![2x2 crafting recipe, from top-left to bottom right: Gold Ingot, Glowstone Dust, Glowstone Dust, Spider Eye](recipes/spell_catalyst/sacrificial.png)
+![2x2 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Glowstone Dust, Spider Eye](recipes/spell_catalyst/sacrificial.png)
 
 Sacrificial Catalysts are capable of activating [Sacrificial](#sacrificial) spells; It has no particular block attributed to its magic.
 
@@ -381,3 +382,15 @@ Usually, Sacrificial spells require health and experience points, and will not t
 - The player has the exact amount of health points required, and triggering the spell would kill them.
 
 Sacrificial spells also have no delay or "progress" to them; Every spell is a direct and immediate exchange of life for power.
+
+### Singularity Catalyst
+
+![3x3 shaped crafting recipe, from top-left to bottom-right: Ender Pearl, Lapis Lazuli, Redstone, Fire Charge, Eye of Ender, Spider Eye, Gold Ingot, Glowstone Dust, Gold Ingot.](recipes/spell_catalyst/singularity.png)
+
+![3x3 shaped crafting recipe, from top-left to bottom-right: Gold Ingot, Glowstone Dust, Gold Ingot, Glowstone Dust, Diamond, Glowstone Dust, Gold Ingot, Glowstone Dust, Gold Ingot.](recipes/spell_catalyst/singularity_short.png)
+
+Singularity Catalysts are capable of activating [any](#list-of-catalysts) type of spell; It has no particular block attributed to its magic.
+
+Singularity Catalysts are rare and expensive, being useful for a small amount of niche occasions. Unlike other catalysts, they cannot be retrieved upon placement.
+
+Both recipes for the Singularity Catalyst are a reward for crafting one of every other Catalyst in the game.
