@@ -1,0 +1,26 @@
+{
+    "parent": "goldpaths:werewoof/_main",
+    "display": {
+        "title": "Killing Machine",
+        "description": {
+            "translate": "Get a kill streak of %s or higher.",
+            "with": [
+                {
+                    "text": "10",
+                    "color": "yellow"
+                }
+            ]
+        },
+        "icon": {
+            "id": "iron_sword"
+        }
+    },
+    "criteria": {
+        "get_combo_streak": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 8
+    }
+}

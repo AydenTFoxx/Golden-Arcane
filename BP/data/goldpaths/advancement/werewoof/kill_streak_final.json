@@ -1,0 +1,31 @@
+{
+    "parent": "goldpaths:werewoof/kill_streak_long",
+    "display": {
+        "title": "There Will be Blood",
+        "description": {
+            "translate": "Get a kill streak of %s.",
+            "with": [
+                {
+                    "text": "50",
+                    "color": "red"
+                }
+            ]
+        },
+        "icon": {
+            "id": "netherite_sword"
+        },
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "get_max_combo_streak": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 20,
+        "recipes": [
+            "goldark:blood_weapon_enhanced"
+        ]
+    }
+}

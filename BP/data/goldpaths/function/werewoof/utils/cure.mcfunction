@@ -13,6 +13,10 @@ execute if entity @s[tag=goldpaths.perk_werewoof] run function goldpaths:_perks/
 # Revoke advancements
 advancement revoke @s from goldpaths:_root
 
+# Remove from Werewoof team
+team leave @s
+
+
 # Remove tags
 tag @s remove goldpaths.has_path
 tag @s remove goldpaths.is_werewoof

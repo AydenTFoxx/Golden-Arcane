@@ -1,0 +1,36 @@
+## * AydenTFoxx @ 2025-07-09 .. 2025-07-10
+
+
+# Revoke trigger
+advancement revoke @s only goldpaths:werewoof/utils/kill_mob
+
+# Ignore if non-Werewoof
+execute unless entity @s[tag=goldpaths.is_werewoof] run return fail
+
+# Ignore if preparing Banish
+execute if entity @s[tag=goldpaths.werewoof.banish] run return fail
+
+
+# Add combo score
+execute unless score @s goldpaths.combo matches 80.. run scoreboard players add @s goldpaths.combo 1
+
+# Set combo time
+scoreboard players set @s[scores={ goldpaths.combo=..20 }] goldpaths.combo_timer 80
+scoreboard players set @s[scores={ goldpaths.combo=21..40 }] goldpaths.combo_timer 120
+scoreboard players set @s[scores={ goldpaths.combo=41.. }] goldpaths.combo_timer 240
+
+
+# Apply combo effects (5+ kills)
+execute if score @s goldpaths.combo matches 5.. run function goldpaths:werewoof/ability/_apply_attack_effects
+
+
+# Display actionbar messages (2+ kills)
+title @s[scores={ goldpaths.combo=2..9 }] actionbar { translate: "{ %s: %s }", color: "gray", with: [ { text: "Kill streak", color: "white" }, { score: { name: "@s", objective: "goldpaths.combo" }, color: "red" } ] }
+title @s[scores={ goldpaths.combo=10..29 }] actionbar { translate: "{ %s: %s } | Press %s to %s.", color: "gray", with: [ { text: "Kill streak", color: "yellow" }, { score: { name: "@s", objective: "goldpaths.combo" }, color: "red" }, { text: "CTRL+SHIFT", color: "yellow" }, { text: "Lunge", color: "white" } ] }
+title @s[scores={ goldpaths.combo=30..49 }] actionbar { translate: "{ %s: %s } | Press %s to %s.", color: "gray", with: [ { text: "Kill streak", color: "gold" }, { score: { name: "@s", objective: "goldpaths.combo" }, color: "red" }, { text: "CTRL+SHIFT", color: "yellow" }, { text: "Summon Wolves", color: "yellow" } ] }
+title @s[scores={ goldpaths.combo=50.. }] actionbar { translate: "{ %s: %s } | Hold %s to %s.", color: "white", with: [ { text: "Kill streak", color: "red" }, { score: { name: "@s", objective: "goldpaths.combo" }, color: "gold" }, { text: "CTRL+SHIFT", color: "yellow" }, { text: "Banish", color: "aqua" } ] }
+
+# Grant advancements (10, 40, 80 kills)
+advancement grant @s[scores={ goldpaths.combo=10.. }] only goldpaths:werewoof/kill_streak_short
+advancement grant @s[scores={ goldpaths.combo=30.. }] only goldpaths:werewoof/kill_streak_long
+advancement grant @s[scores={ goldpaths.combo=50.. }] only goldpaths:werewoof/kill_streak_final

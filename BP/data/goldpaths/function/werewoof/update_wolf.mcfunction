@@ -1,10 +1,10 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-08
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-10
 ## * 
 ## * Updates the Werewoof Wolf's behavior and abilities.
 
 
 ## Remove if matching player is not nearby
-execute unless function goldpaths:__utils/is_same_guid run return run kill @s
+execute if entity @s[tag=goldpaths.is_morph] unless function goldpaths:__utils/is_same_guid run return run kill @s
 
 
 ##? TRAITS & ACTIONS
@@ -30,7 +30,11 @@ execute unless entity @n[type=!#goldark:technical, predicate=goldark:entity/is_h
 scoreboard players add @s[tag=goldpaths.rage_mode] goldark.ambience 1
 
 # Play angry angry sound
-execute if score @s goldark.ambience matches 40 run playsound entity.wolf.growl player @a[distance=..16] ~ ~ ~ 1 0.85
+execute if score @s[tag=goldpaths.is_morph] goldark.ambience matches 40 run playsound entity.wolf.growl player @a[distance=..16] ~ ~ ~ 1 0.85
 
 # Reset ambience timer
 scoreboard players reset @s[tag=goldpaths.rage_mode, scores={ goldark.ambience=80.. }] goldark.ambience
+
+
+## Remove self if non-Morph
+execute unless score @s[tag=!goldpaths.is_morph] goldark.ability_timer matches 1.. run data merge entity @s { Health: 0.0f, DeathTime: 20s }

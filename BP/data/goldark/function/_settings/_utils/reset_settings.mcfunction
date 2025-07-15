@@ -10,7 +10,6 @@ data merge storage goldark:settings { graphics: "Fancy", debug_mode: false, verb
 team add goldpaths.werewoof { text: "Werewoof", color: "gray" }
 
 team modify goldpaths.werewoof seeFriendlyInvisibles false
-team modify goldpaths.werewoof suffix { text: " [Wolf]", color: "gray" }
 
 
 # Display message (if player)
