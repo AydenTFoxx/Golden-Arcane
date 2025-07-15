@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-18 .. 2025-07-07
+## * AydenTFoxx @ 2025-06-18 .. 2025-07-10
 ## * 
 ## * Updates the Ward spell's effects and behavior.
 
@@ -6,7 +6,7 @@
 ## AMBIENT
 
 # Rotate self
-rotate @s ~10 ~
+execute if data storage goldark:settings { debug_mode: true } run rotate @s ~10 ~
 
 # Display ambient particles
 particle reverse_portal ~ ~ ~ 0.02 0.05 0.02 0.02 2

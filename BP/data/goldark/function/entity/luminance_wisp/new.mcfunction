@@ -1,7 +1,7 @@
-## * AydenTFoxx @ 2025-04-04
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-10
 ## * 
 ## * Summons a new "Luminance Wisp" entity.
 
 
 # Summon entity
-summon marker ~ ~ ~ { CustomName: { text: "Luminance Wisp" }, CustomNameVisible: false, Tags: [ "goldark.entity.luminance_wisp" ] }
+summon marker ~ ~ ~ { CustomName: "Luminance Wisp", Tags: [ "goldark.entity.luminance_wisp" ] }

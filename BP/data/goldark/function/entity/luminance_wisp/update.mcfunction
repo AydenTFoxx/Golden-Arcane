@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-06-17
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-10
 ## * 
 ## * Runs behaviors for the Luminance Wisp custom entity.
 ## * 
@@ -7,7 +7,7 @@
 
 
 # Tick timer
-execute unless score @s goldark.ability_timer matches 100.. run scoreboard players add @s goldark.ability_timer 1
+execute unless score @s goldark.ability_timer matches 20.. run scoreboard players add @s goldark.ability_timer 1
 
 # Replace Air with Light
 execute if block ~ ~ ~ #air run setblock ~ ~ ~ light strict
@@ -22,5 +22,5 @@ execute positioned ~ ~-1 ~ unless entity @p[tag=goldark.effect.luminance, distan
         positioned ~ ~1 ~ if block ~ ~ ~ light run setblock ~ ~ ~ air
 
 # Remove self
-execute if score @s goldark.ability_timer matches 20.. positioned ~ ~-1 ~ \
+execute if score @s goldark.ability_timer matches 10.. positioned ~ ~-1 ~ \
         unless entity @p[tag=goldark.effect.luminance, distance=..1] run kill @s

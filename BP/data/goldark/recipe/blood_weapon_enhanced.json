@@ -1,0 +1,45 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "S": [
+            "golden_sword",
+            "iron_sword"
+        ],
+        "G": "gold_ingot",
+        "A": "nether_star",
+        "E": "fermented_spider_eye",
+        "d": "diamond"
+    },
+    "pattern": [
+        "dAd",
+        "GSG",
+        "dEd"
+    ],
+    "result": {
+        "id": "golden_sword",
+        "components": {
+            "item_name": "Imperius",
+            "rarity": "rare",
+            "enchantments": {
+                "goldark:decaying": 5,
+                "goldark:demanding": 3
+            },
+            "custom_data": {
+                "goldark": {
+                    "items": {
+                        "blood_weapon": true,
+                        "weapon_mode": "bow"
+                    }
+                }
+            },
+            "max_damage": 2048,
+            "consumable": {
+                "animation": "bow",
+                "consume_seconds": 99999,
+                "has_consume_particles": false,
+                "sound": "block.sculk.hit"
+            }
+        }
+    },
+    "category": "equipment"
+}

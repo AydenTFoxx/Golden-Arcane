@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-06
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-10
 ## * 
 ## * Removes the Banishment spell.
 
@@ -10,7 +10,7 @@ playsound ambient.nether_wastes.mood block @a[distance=..16] ~ ~ ~ 0.8 0.8
 
 
 # Consume candle
-setblock ~ ~ ~ air
+execute if block ~ ~ ~ #fire run setblock ~ ~ ~ air
 
 # Replace Obsidian with Crying Obsidian
 execute if block ~ ~-1 ~ obsidian run setblock ~ ~-1 ~ crying_obsidian
