@@ -1,6 +1,10 @@
-## * AydenTFoxx @ 2025-07-06 .. 2025-07-10
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-16
 ## * 
 ## * Updates entities with their relevant Golden Arcane Paths.
+
+
+## Ignore if datapack has been disabled globally
+execute if data storage goldark:settings { benchmark: true } run return fail
 
 
 ##? WEREWOOF
