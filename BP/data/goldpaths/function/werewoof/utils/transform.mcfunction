@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-10
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-16
 ## * 
 ## * Transforms the player into a Wolf form.
 
@@ -29,7 +29,7 @@ data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is
 data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] Rotation set from entity @s Rotation
 
 # Get player name
-summon text_display run data merge entity @s { Tags: [ goldpaths.utils.custom_name ], text: [{ selector: "@p" }, { text: " [Wolf]", color: "gray" }], view_range: 0 }
+summon text_display ~ ~ ~ { Tags: [ goldpaths.utils.custom_name ], text: [{ selector: "@p" }, { text: " [Wolf]", color: "gray" }], view_range: 0 }
 
 data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] CustomName set from entity @n[type=text_display, tag=goldpaths.utils.custom_name, distance=..1] text
 
