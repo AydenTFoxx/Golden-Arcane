@@ -24,7 +24,4 @@ execute if entity @s[scores={ goldpaths.combo=30..59 }] if predicate goldark:inp
 
 # Banish
 execute if entity @s[scores={ goldpaths.combo=50.. }] if predicate goldark:input/sprint if predicate goldark:input/sneak run return run function goldpaths:werewoof/ability/prepare_banish
-execute if entity @s[tag=goldpaths.werewoof.banish, predicate=!goldark:input/sprint, predicate=!goldark:input/sneak] positioned ^ ^ ^4 at @n[type=!#goldark:immune_to_banishment, predicate=goldark:entity/is_hostile, distance=..4] run function goldark:spell/banish/new
-
-execute if entity @s[tag=goldpaths.werewoof.banish, predicate=!goldark:input/sprint, predicate=!goldark:input/sneak] run scoreboard players reset @s goldpaths.combo
-execute if entity @s[tag=goldpaths.werewoof.banish, predicate=!goldark:input/sprint, predicate=!goldark:input/sneak] run return run tag @s remove goldpaths.werewoof.banish
+execute if entity @s[tag=goldpaths.werewoof.banish, predicate=!goldark:input/sprint, predicate=!goldark:input/sneak] run return run function goldpaths:werewoof/ability/release_banish

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-09 .. 2025-07-10
+## * AydenTFoxx @ 2025-07-09 .. 2025-07-16
 
 
 # Revoke trigger
@@ -15,9 +15,9 @@ execute if entity @s[tag=goldpaths.werewoof.banish] run return fail
 execute unless score @s goldpaths.combo matches 80.. run scoreboard players add @s goldpaths.combo 1
 
 # Set combo time
-scoreboard players set @s[scores={ goldpaths.combo=..20 }] goldpaths.combo_timer 80
-scoreboard players set @s[scores={ goldpaths.combo=21..40 }] goldpaths.combo_timer 120
-scoreboard players set @s[scores={ goldpaths.combo=41.. }] goldpaths.combo_timer 240
+scoreboard players set @s[scores={ goldpaths.combo=..30 }] goldpaths.combo_timer 80
+scoreboard players set @s[scores={ goldpaths.combo=31..50 }] goldpaths.combo_timer 160
+scoreboard players set @s[scores={ goldpaths.combo=51.. }] goldpaths.combo_timer 240
 
 
 # Apply combo effects (5+ kills)
