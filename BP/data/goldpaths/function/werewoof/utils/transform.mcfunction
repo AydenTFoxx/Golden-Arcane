@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-16
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-17
 ## * 
 ## * Transforms the player into a Wolf form.
 
@@ -16,24 +16,11 @@ execute unless score #goldark_moon_phase goldark.dummy matches 0 run function go
 
 
 # Summon Wolf
-summon wolf ~ ~ ~ { Health: 20.0f, PortalCooldown: 20s, PersistenceRequired: 1b, Tags: [ goldpaths.morph_werewoof, goldpaths.is_morph ], active_effects: [ { id: "regeneration", amplifier: 1, duration: -1, show_particles: false }, { id: "resistance", amplifier: 1, duration: -1, show_particles: false } ], attributes: [ { id: "armor", base: 8.0 }, { id: "armor_toughness", base: 8.0 }, { id: "attack_damage", base: 4.0 }, { id: "attack_knockback", base: 0.5 }, { id: "fall_damage_multiplier", base: 0.8 }, { id: "jump_strength", base: 0.5 }, { id: "knockback_resistance", base: 0.2 }, { id: "max_health", base: 8.0, modifiers: [ { id: "goldpaths:werewoof/wolf_health", amount: 12.0, operation: "add_value" } ] }, { id: "movement_speed", base: 0.25 }, { id: "scale", base: 1.5 } ], Team: "goldpaths.werewoof", Age: 99999 }
+execute summon wolf run function goldpaths:werewoof/utils/summon_wolf
 
 # Initialize player and Wolf's GUID
 execute unless score @s goldark.guid matches 1.. run function goldark:spell/_utils/new_guid
 scoreboard players operation @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] goldark.guid = @s goldark.guid
-
-# Inherit properties from player
-data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] active_effects append from entity @s active_effects
-data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] fall_distance set from entity @s fall_distance
-data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] Health set from entity @s Health
-data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] Rotation set from entity @s Rotation
-
-# Get player name
-summon text_display ~ ~ ~ { Tags: [ goldpaths.utils.custom_name ], text: [{ selector: "@p" }, { text: " [Wolf]", color: "gray" }], view_range: 0 }
-
-data modify entity @n[type=wolf, tag=goldpaths.morph_werewoof, tag=!goldpaths.is_werewoof, distance=..1] CustomName set from entity @n[type=text_display, tag=goldpaths.utils.custom_name, distance=..1] text
-
-kill @n[type=text_display, tag=goldpaths.utils.custom_name, distance=..1]
 
 
 # Change own gamemode
