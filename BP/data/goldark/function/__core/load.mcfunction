@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-07-10
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-17
 ## * 
 ## * Loads all required features for the datapack's functioning.
 
@@ -84,7 +84,7 @@ scoreboard players enable @a goldark.settings
 ##? VERSIONING
 
 ## Set internal versioning
-scoreboard players set #goldark_target_version goldark.dummy 6
+scoreboard players set #goldark_target_version goldark.dummy 7
 
 ## Update versioning
 execute unless score #goldark_version goldark.dummy = #goldark_target_version goldark.dummy run function goldark:__core/utils/update_version

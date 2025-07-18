@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-25 .. 2025-07-01
+## * AydenTFoxx @ 2025-06-25 .. 2025-07-17
 ## * 
 ## * Updates the Smite spell's effects and behavior.
 
@@ -15,7 +15,7 @@ execute unless score @s goldark.ability_timer matches 1.. run particle electric_
 
 #? DEBUG: Display AoE particles
 execute if data storage goldark:settings { debug_mode: true } run particle end_rod ^ ^ ^12 0.0 0.0 0.0 0.01 1
-execute if data storage goldark:settings { graphics: "Fancy" } run particle dust{ color: 9834245, scale: 1.0 } ^ ^ ^8 0.0 0.1 0.0 0.05 0 normal @a[tag=goldark.is_hostile]
+execute if data storage goldark:settings { graphics: "Fancy" } run particle dust{ color: 9834245, scale: 1.0 } ^ ^ ^8 0.0 0.1 0.0 0.05 0 normal @a[tag=goldark.is_hostile, distance=..16]
 
 
 ## BEHAVIOR

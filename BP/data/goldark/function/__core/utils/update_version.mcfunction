@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-26 .. 2025-07-08 .. 2025-07-10
+## * AydenTFoxx @ 2025-06-26 .. 2025-07-08 .. 2025-07-17
 ## * 
 ## * Updates the datapack with applicable compatibility fixes for earlier versions.
 ## * 
@@ -12,6 +12,9 @@ execute if score #goldark_version goldark.dummy matches 4 run scoreboard players
 
 # [5 -> 6] Update Werewoof settings
 execute if score #goldark_version goldark.dummy matches 5 run data remove storage goldark:settings goldpaths
+
+# [6 -> 7] Remove redundant Warp spell data
+execute if score #goldark_version goldark.dummy matches 6 as @e[type=marker, tag=goldark.entity.spell_lock] run data modify entity @s data.goldark.spell_lock set value {}
 
 
 # Major release fixes will be here upon releasing the datapack.
