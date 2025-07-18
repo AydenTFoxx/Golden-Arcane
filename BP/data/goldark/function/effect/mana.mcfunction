@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-01
+## * AydenTFoxx @ 2025-07-01 .. 2025-07-12
 ## * 
 ## * Grants the user some Mana, while also inflicting Magic Sickness.
 
@@ -23,7 +23,7 @@ function goldark:spell/_utils/update_mana
 
 
 # Add Magic Sickness
-scoreboard players add @s goldark.ability_timer 50
+scoreboard players add @s goldark.ability_timer 20
 
 tag @s add goldark.magic_sickness
 

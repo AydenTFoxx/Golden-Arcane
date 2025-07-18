@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-07-08
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-17
 ## * 
 ## * Loads all required features for the datapack's functioning.
 
@@ -38,10 +38,22 @@ scoreboard objectives add goldark.guid dummy { text: "GUID", color: "yellow" }
 # A dedicated meter for a player's "magic energy" capacity. Used as a "cost" for every spell.
 scoreboard objectives add goldark.mana dummy { text: "Mana", color: "light_purple" }
 
+## Combo (goldpaths)
+# A dedicated counter for measuring combo actions. Used by the Werewoof Path to grant abilities to the player.
+scoreboard objectives add goldpaths.combo dummy { text: "Combo", color: "green" }
 
-## True Health (goldark)
+## Combo Timer (goldpaths)
+# A dedicated timer for measuring how long a combo will last. When the score reaches 0, the combo is lost.
+scoreboard objectives add goldpaths.combo_timer dummy { text: "Combo Timer", color: "dark_green" }
+
+
+## Player Health (goldark)
 # A read-only meter of player health. Used in predicates and for special abilities.
 scoreboard objectives add goldark.health_player health { text: "Health (Player)", color: "dark_red" }
+
+## Player Deaths (goldark)
+# A game-provided counter of a player's number of deaths. Used for revoking Perks and effects on death.
+scoreboard objectives add goldark.deaths_player deathCount { text: "Deaths (Player)", color: "dark_gray" }
 
 
 ## Settings (goldark)
@@ -72,7 +84,7 @@ scoreboard players enable @a goldark.settings
 ##? VERSIONING
 
 ## Set internal versioning
-scoreboard players set #goldark_target_version goldark.dummy 6
+scoreboard players set #goldark_target_version goldark.dummy 7
 
 ## Update versioning
 execute unless score #goldark_version goldark.dummy = #goldark_target_version goldark.dummy run function goldark:__core/utils/update_version

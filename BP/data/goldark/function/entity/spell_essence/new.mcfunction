@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-30 .. 2025-07-09
+## * AydenTFoxx @ 2025-06-30 .. 2025-07-12
 ## * 
 ## * Seals the nearest spell into the Scroll, allowing for later re-use.
 
@@ -10,8 +10,8 @@ execute if data entity @s data.goldark.StoredSpell.Tags run return run function 
 # Grant advancement
 advancement grant @p[distance=..16] only goldark:use_essence seal_spell
 
-# Convert Spell entity to wisp (mobile; follows player) UNLESS player is sneaking
-execute unless entity @p[distance=..8, predicate=goldark:input/sneak] as @n[type=#goldark:technical, tag=goldark.is_spell, tag=!goldark.is_essence, distance=..1] run function goldark:entity/spell_essence/utils/convert_to_wisp
+# Convert Spell entity to Wisp (mobile; follows player)
+execute as @n[type=#goldark:technical, tag=goldark.is_spell, tag=!goldark.is_essence, distance=..1] run function goldark:entity/spell_essence/utils/convert_to_wisp
 
 
 # Extract relevant data
@@ -28,6 +28,9 @@ execute if entity @n[type=fireball, tag=goldark.is_spell, tag=goldark.is_essence
 
 # Get Spell name
 data modify entity @s data.goldark.name set from entity @n[type=#goldark:technical, tag=goldark.is_spell, tag=goldark.is_essence, distance=..1] CustomName
+
+# Remove Wisp tag if player is sneaking
+execute if entity @p[distance=..8, predicate=goldark:input/sneak] run data remove entity @s data.goldark.StoredSpell.Tags[2]
 
 
 # Remove Spell entity

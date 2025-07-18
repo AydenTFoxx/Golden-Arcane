@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-06
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-10
 ## * 
 ## * Grants/revokes all unique traits of the Werewoof path.
 
@@ -13,7 +13,7 @@ attribute @s[tag=goldpaths.perk_werewoof] knockback_resistance modifier remove g
 attribute @s[tag=goldpaths.perk_werewoof] safe_fall_distance modifier remove goldpaths:werewoof_perk
 
 # Display verbose message
-execute if entity @s[tag=goldpaths.perk_werewoof] if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: "Removed perk 'Werewoof' from player.", color: "gray" }
+execute if entity @s[tag=goldpaths.perk_werewoof] if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: '"Removed perk \\"Werewoof\\" from player."' }
 
 # Remove tag
 execute if entity @s[tag=goldpaths.perk_werewoof] run return run tag @s remove goldpaths.perk_werewoof
@@ -32,7 +32,7 @@ attribute @s safe_fall_distance modifier add goldpaths:werewoof_perk 2 add_value
 tag @s add goldpaths.perk_werewoof
 
 # Display verbose message
-execute if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: "Added perk 'Werewoof' to player.", color: "gray" }
+execute if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: '"Added perk \\"Werewoof\\" to player."' }
 
 # Return value
 return 0

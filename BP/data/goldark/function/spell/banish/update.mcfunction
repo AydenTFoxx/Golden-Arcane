@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-07
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-16
 ## * 
 ## * Updates the Banishment spell's effects and behavior.
 
@@ -38,6 +38,9 @@ execute if score @s goldark.ability_timer matches 1 run playsound block.portal.t
 # Apply effects
 execute if score @s goldark.ability_timer matches 1 run effect give @a[distance=..16] darkness 6 1 true
 execute if score @s goldark.ability_timer matches 1 run effect give @a[distance=..16] slowness 6 3 true
+
+effect give @e[type=!#goldark:technical, predicate=goldark:entity/is_hostile, tag=!goldark.banishment, distance=..16] slowness 1 4 true
+effect give @e[type=!#goldark:technical, predicate=goldark:entity/is_hostile, tag=!goldark.banishment, distance=..16] weakness 1 2 true
 
 
 # Trap foe

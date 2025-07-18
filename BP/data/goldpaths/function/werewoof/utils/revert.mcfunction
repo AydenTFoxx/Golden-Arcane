@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-12
 ## * 
 ## * Reverts the player's transformation, removing the Wolf and returning the player.
 
@@ -17,6 +17,9 @@ function goldpaths:__utils/reset_gamemode
 tag @s remove goldpaths.is_transformed
 
 
+# Move upwards if stuck on ground
+execute unless block ~ ~ ~ #goldark:is_breathable run tp @s ~ ~0.5 ~
+
 # Apply protective effects
 effect give @s levitation 1 0 true
 effect give @s resistance 1 2 true
@@ -32,4 +35,4 @@ particle gust ~ ~1 ~ 0.0 0.0 0.0 1 1
 playsound particle.soul_escape player @s ~ ~ ~ 1 0.85
 
 # Display verbose message
-execute if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: "You have been transformed back into a Human.", color: "gray" }
+execute if data storage goldark:settings { verbose_mode: true } run function goldark:__core/utils/log_message { message: '"You have been transformed back into a Human."' }

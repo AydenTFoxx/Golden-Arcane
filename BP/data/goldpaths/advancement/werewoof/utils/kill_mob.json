@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killed_mob": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "nbt": "{ Tags: [ goldpaths.is_werewoof ] }"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldpaths:werewoof/ability/__trigger_combo"
+    }
+}

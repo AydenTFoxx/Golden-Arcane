@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-26 .. 2025-07-08
+## * AydenTFoxx @ 2025-06-26 .. 2025-07-08 .. 2025-07-17
 ## * 
 ## * Updates the datapack with applicable compatibility fixes for earlier versions.
 ## * 
@@ -13,15 +13,18 @@ execute if score #goldark_version goldark.dummy matches 4 run scoreboard players
 # [5 -> 6] Update Werewoof settings
 execute if score #goldark_version goldark.dummy matches 5 run data remove storage goldark:settings goldpaths
 
+# [6 -> 7] Remove redundant Warp spell data
+execute if score #goldark_version goldark.dummy matches 6 as @e[type=marker, tag=goldark.entity.spell_lock] run data modify entity @s data.goldark.spell_lock set value {}
+
 
 # Major release fixes will be here upon releasing the datapack.
 
 
 ## UPDATE
 
+# Display notice
+execute unless score #goldark_version goldark.dummy matches 1.. as @a run function goldark:__core/utils/log_message { message: { text: "Welcome to Golden Arcane.", color: "yellow" } }
+execute if score #goldark_version goldark.dummy matches 1.. as @a run function goldark:__core/utils/log_message { message: { text: "Updated datapack successfully.", color: "white" } }
+
 # Update internal version
 scoreboard players operation #goldark_version goldark.dummy = #goldark_target_version goldark.dummy
-
-# Display notice
-execute unless data storage goldark:settings { init: true } as @a run return run function goldark:__core/utils/log_message { message: "Welcome to Golden Arcane.", color: "white" }
-execute if data storage goldark:settings { init: true } as @a run function goldark:__core/utils/log_message { message: "Updated datapack successfully.", color: "white" }

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-07-05 .. 2025-07-08
+## * AydenTFoxx @ 2025-07-05 .. 2025-07-10
 ## * 
 ## * Targets the closest hostile mob to the Wolf form.
 
@@ -11,7 +11,8 @@ execute unless data entity @s[tag=!goldpaths.rage_mode] { AngerTime: 0 } run ret
 
 
 # Set target mob from UUID
-data modify entity @s AngryAt set from entity @n[type=!#goldark:technical, predicate=goldark:entity/is_hostile, distance=..8] UUID
+data modify entity @s[tag=goldpaths.is_morph] AngryAt set from entity @n[type=!#goldark:technical, type=!wolf, predicate=goldark:entity/is_hostile, distance=..8] UUID
+data modify entity @s[tag=!goldpaths.is_morph] AngryAt set from entity @n[type=!#goldark:technical, type=!wolf, predicate=goldark:entity/is_hostile, distance=..16] UUID
 
 # Set anger time
 data modify entity @s AngerTime set value 160

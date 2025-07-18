@@ -1,12 +1,10 @@
-## * AydenTFoxx @ 2025-07-06 .. 2025-07-07
+## * AydenTFoxx @ 2025-07-06 .. 2025-07-16
 ## * 
 ## * Updates entities with their relevant Golden Arcane Paths.
 
 
-##? PERKS
-
-# Revoke perks on death
-execute as @a[tag=goldpaths.perk_werewoof] if data entity @s { Health: 0.0f } run function goldpaths:_perks/werewoof
+## Ignore if datapack has been disabled globally
+execute if data storage goldark:settings { benchmark: true } run return fail
 
 
 ##? WEREWOOF

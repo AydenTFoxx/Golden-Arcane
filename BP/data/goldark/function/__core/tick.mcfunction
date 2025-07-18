@@ -1,6 +1,16 @@
-## * AydenTFoxx @ 2025-04-04 .. 2025-07-02
+## * AydenTFoxx @ 2025-04-04 .. 2025-07-10
 ## * 
 ## * Executes the datapack's behaviors at a custom tick rate.
+
+
+##? WORLD EVENTS
+# Functions which are run on particular events, which cannot be otherwise be tested with advancements.
+
+#* On Player Death
+execute as @a[scores={ goldark.deaths_player=1.. }, tag=!goldark.is_dead] run function goldark:__core/events/on_player_death
+
+#* On Player Respawn
+execute as @a[tag=goldark.is_dead] at @s if score @s goldark.health_player matches 1.. run tag @s remove goldark.is_dead
 
 
 ##? GOLDARK CLOCK

@@ -1,4 +1,4 @@
-## * AydenTFoxx @ 2025-06-30
+## * AydenTFoxx @ 2025-06-30 .. 2025-07-10
 ## * 
 ## * Updates the Deflect spell's effects and behavior.
 
@@ -6,7 +6,7 @@
 ## AMBIENT
 
 # Rotate self
-rotate @s ~10 ~
+execute if data storage goldark:settings { debug_mode: true } run rotate @s ~10 ~
 
 # Display ambient particles
 particle white_smoke ~ ~0.5 ~ 0.02 0.05 0.02 0.015 2

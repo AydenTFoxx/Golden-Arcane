@@ -1,0 +1,27 @@
+{
+    "parent": "goldpaths:werewoof/kill_streak_short",
+    "display": {
+        "title": "Omen of Death",
+        "description": {
+            "translate": "Get a kill streak of %s or higher.",
+            "with": [
+                {
+                    "text": "30",
+                    "color": "yellow"
+                }
+            ]
+        },
+        "icon": {
+            "id": "golden_sword"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "get_big_combo_streak": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "experience": 15
+    }
+}
