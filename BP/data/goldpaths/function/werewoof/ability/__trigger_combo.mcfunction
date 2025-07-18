@@ -1,4 +1,9 @@
 ## * AydenTFoxx @ 2025-07-09 .. 2025-07-16
+## * 
+## * Increases the player's kill streak / combo upon each successful kill, while also setting a "combo timer".
+## * Failing to kill another creature within that timer resets the combo back to 0.
+## * 
+## * Reaching certain thresholds grant special abilities to aid in combat further. In particular, 10, 30, and 50 kills grant powerful buffs and new (temporary) abilities to use.
 
 
 # Revoke trigger

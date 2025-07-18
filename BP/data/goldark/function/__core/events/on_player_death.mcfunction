@@ -1,4 +1,6 @@
 ## * AydenTFoxx @ 2025-07-10 .. 2025-07-16
+## * 
+## * Runs code exactly once upon a player's death.
 
 
 # Remove effects
