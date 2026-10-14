@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "placed_scarecrow": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": "goldark:spell/scarecrow"
+            }
+        },
+        "sheared_scarecrow": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": "goldark:spell/scarecrow",
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "shears"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "placed_scarecrow",
+            "sheared_scarecrow"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:entity/scarecrow/trigger"
+    }
+}

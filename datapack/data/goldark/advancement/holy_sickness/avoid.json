@@ -1,0 +1,35 @@
+{
+    "parent": "goldark:holy_sickness/discover",
+    "display": {
+        "icon": {
+            "id": "glowstone_dust"
+        },
+        "title": "The Divine Paradox",
+        "description": "Create a form of mitigating Holy Sickness",
+        "frame": "goal"
+    },
+    "criteria": {
+        "craft_holy_numbness_potion": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "goldark:potion/holy_numbness"
+                ],
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific/player": {
+                            "advancements": {
+                                "goldark:holy_sickness/discover": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 8
+    }
+}

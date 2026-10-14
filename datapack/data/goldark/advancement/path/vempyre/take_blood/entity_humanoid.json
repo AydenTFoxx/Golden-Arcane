@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "#goldark:humanoid/living"
+                    }
+                },
+                "damage": {
+                    "taken": {
+                        "min": 1
+                    }
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "count": 0
+                            }
+                        },
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_vempyre"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

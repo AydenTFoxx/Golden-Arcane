@@ -1,0 +1,16 @@
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "location_check",
+            "predicate": {
+                "can_see_sky": true
+            }
+        },
+        {
+            "type": "weather_check",
+            "raining": false,
+            "thundering": false
+        }
+    ]
+}

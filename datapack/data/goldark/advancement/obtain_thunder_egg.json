@@ -1,0 +1,35 @@
+{
+    "parent": "goldark:unlock_artifact",
+    "display": {
+        "icon": {
+            "id": "egg"
+        },
+        "title": "Forged by Storms",
+        "description": "Obtain a Thunder Egg",
+        "frame": "task",
+        "hidden": false
+    },
+    "criteria": {
+        "get_thunder_egg": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "egg",
+                        "components": {
+                            "custom_data": {
+                                "goldark.items.thunder_egg": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 4,
+        "recipes": [
+            "goldark:spell/thunder_egg"
+        ]
+    }
+}

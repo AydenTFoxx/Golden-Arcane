@@ -1,0 +1,68 @@
+{
+    "display": {
+        "icon": {
+            "id": "redstone"
+        },
+        "title": {
+            "text": "The Vempyre"
+        },
+        "description": "A lust for blood and a taste for fashion",
+        "frame": "task",
+        "background": "block/nether_bricks",
+        "announce_to_chat": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "killed_with_bloodlust": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "killing_blow": {
+                    "is_direct": true
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "effects": {
+                            "darkness": {
+                                "amplifier": 1,
+                                "ambient": true,
+                                "duration": {
+                                    "min": 20
+                                }
+                            },
+                            "unluck": {
+                                "amplifier": {
+                                    "min": 1
+                                },
+                                "ambient": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "drink_debug_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.werepyrism": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "killed_with_bloodlust",
+            "drink_debug_potion"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:tools/vempyrism/convert"
+    }
+}

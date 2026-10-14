@@ -1,0 +1,26 @@
+{
+    "parent": "goldark:_root",
+    "display": {
+        "title": "Artifacts of the Past",
+        "description": "Craft an Arcane Artifact",
+        "icon": {
+            "id": "compass"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "unlock_any": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "goldark:artifact/levitation_feather",
+                    "goldark:artifact/speed_feather",
+                    "goldark:artifact/locator_compass"
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 5
+    }
+}

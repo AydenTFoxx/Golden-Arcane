@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "placed_scarebow": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": "goldark:spell/scarebow"
+            }
+        },
+        "sheared_scarebow": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": "goldark:spell/scarebow",
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "shears"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "placed_scarebow",
+            "sheared_scarebow"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:entity/scarebow/trigger"
+    }
+}

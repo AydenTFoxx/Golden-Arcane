@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 1
+                    },
+                    "type": {
+                        "is_direct": true
+                    }
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "glass_bottle"
+                            }
+                        },
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_vempyre"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:path/vempyre/triggers/hit_with_bottle"
+    }
+}

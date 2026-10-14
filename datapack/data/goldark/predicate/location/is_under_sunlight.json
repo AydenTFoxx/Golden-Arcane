@@ -1,0 +1,14 @@
+{
+    "type": "all_of",
+    "terms": [
+        "goldark:location/can_see_sky",
+        {
+            "type": "location_check",
+            "predicate": {
+                "light": {
+                    "light": 15
+                }
+            }
+        }
+    ]
+}

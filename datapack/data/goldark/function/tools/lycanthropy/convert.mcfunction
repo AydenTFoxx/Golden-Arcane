@@ -1,0 +1,24 @@
+## * Converts the calling entity into a Werewoof.
+## *
+## * Last modified: January 28th, 2025 (AydenTFoxx)
+
+
+# You be Woof, exit.
+execute if entity @s[tag=goldark.is_werewoof] run return run tellraw @s { "text": "You are already a Werewoof.", "color": "red" }
+
+
+# Display audiovisual feedback
+particle minecraft:soul_fire_flame ~ ~0.5 ~ .1 .2 .1 0.05 20 force
+playsound entity.wolf.growl hostile @a[distance=..256] ~ ~ ~ 1 0.5 0.2
+
+# Grant root advancement "Path: Werewoof"
+advancement grant @s[type=player, advancements={ goldark:path/werewoof/root=false }] only goldark:path/werewoof/root
+
+
+# Set Path Level
+scoreboard players set @s goldark.path_level.werewoof 1
+
+# Add tag, now is Woof
+tag @s[tag=!goldark.has_path] add goldark.has_path
+
+tag @s add goldark.is_werewoof

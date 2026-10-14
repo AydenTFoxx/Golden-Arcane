@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "placed_block",
+            "conditions": {
+                "location": "goldark:ritual/lycanthropy_revert"
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:ritual/lycanthropy_revert/init"
+    }
+}

@@ -1,0 +1,21 @@
+## * Inflicts extra harm upon a Werewoof being hit by an Iron weapon.
+## *
+## * Last modified: January 26th, 2025 (AydenTFoxx)
+
+
+# Revoke trigger
+advancement revoke @s[type=player] only goldark:path/werewoof/trigger/hurt_player_by_iron
+
+# Ignore if under the Purity effect
+execute if entity @s[tag=goldark.effect.purity] run return fail
+
+
+# Convert into Absorption if player is Holy-immune
+execute if entity @s[tag=goldark.perk.holy_immune] run return run effect give @s absorption 4 0 true
+
+
+# Apply damage
+damage @s 1 on_fire
+
+# Inflict effect
+effect give @s poison 3 0

@@ -1,0 +1,12 @@
+{
+    "values": [
+        {
+            "id": "goldark:holy_numbness",
+            "required": false
+        },
+        {
+            "id": "goldark:iron_aspect",
+            "required": false
+        }
+    ]
+}

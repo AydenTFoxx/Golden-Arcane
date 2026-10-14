@@ -1,0 +1,69 @@
+{
+    "criteria": {
+        "werewoof_numbness_agent": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#goldark:iron/any"
+                    }
+                ],
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "effects": {
+                            "unluck": {}
+                        },
+                        "equipment": {
+                            "mainhand": {
+                                "items": "#goldark:iron/any"
+                            }
+                        },
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_werewoof"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "vempyre_numbness_agent": {
+            "trigger": "effects_changed",
+            "conditions": {
+                "effects": {
+                    "unluck": {}
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "location": {
+                            "can_see_sky": true,
+                            "light": {
+                                "light": 15
+                            }
+                        },
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_vempyre"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "werewoof_numbness_agent",
+            "vempyre_numbness_agent"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "goldark:potion/holy_numbness"
+        ]
+    }
+}

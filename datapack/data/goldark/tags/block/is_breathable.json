@@ -1,0 +1,14 @@
+{
+    "values": [
+        "#goldark:is_transparent",
+        "#beds",
+        "#chains",
+        "#lanterns",
+        "#lightning_rods",
+        "#stairs",
+        "#slabs",
+        "#wooden_shelves",
+        "#bars",
+        "dirt_path"
+    ]
+}

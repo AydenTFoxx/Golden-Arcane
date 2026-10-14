@@ -1,0 +1,20 @@
+{
+	"values": [
+		"#goldark:is_transparent",
+		"short_grass",
+		"tall_grass",
+		"small_dripleaf",
+		"big_dripleaf",
+		"big_dripleaf_stem",
+		"moss_block",
+		"moss_carpet",
+		"pale_moss_block",
+		"pale_moss_carpet",
+		"bush",
+		"firefly_bush",
+		{
+			"id": "red_shrub",
+			"required": false
+		}
+	]
+}

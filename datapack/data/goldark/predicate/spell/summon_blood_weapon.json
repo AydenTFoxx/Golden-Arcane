@@ -1,0 +1,65 @@
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "enchanting_table"
+                }
+            }
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": 1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": 1,
+            "offsetZ": -1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": 1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "redstone_torch",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": -1,
+            "offsetZ": -1
+        }
+    ]
+}

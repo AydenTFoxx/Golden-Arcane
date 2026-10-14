@@ -1,0 +1,12 @@
+{
+    "values": [
+        {
+            "id": "goldark:path/_main",
+            "required": false
+        },
+        {
+            "id": "goldark:spellcraft/_main",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "carved_pumpkin",
+                        "jack_o_lantern"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "hay_block"
+                }
+            },
+            "offsetY": -1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#wooden_fences"
+                }
+            },
+            "offsetY": -2
+        },
+        {
+            "type": "any_of",
+            "terms": [
+                {
+                    "type": "all_of",
+                    "terms": [
+                        {
+                            "type": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": 1,
+                            "offsetY": -1
+                        },
+                        {
+                            "type": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetX": -1,
+                            "offsetY": -1
+                        }
+                    ]
+                },
+                {
+                    "type": "all_of",
+                    "terms": [
+                        {
+                            "type": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetY": -1,
+                            "offsetZ": 1
+                        },
+                        {
+                            "type": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#wooden_fences"
+                                }
+                            },
+                            "offsetY": -1,
+                            "offsetZ": -1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

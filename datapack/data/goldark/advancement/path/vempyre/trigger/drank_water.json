@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion"
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_vempyre"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:path/vempyre/triggers/hydrate"
+    }
+}

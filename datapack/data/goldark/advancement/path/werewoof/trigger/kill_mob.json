@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "killed_mob": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_tags": {
+                            "any_of": [
+                                "goldark.is_werewoof"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:path/werewoof/ability/__trigger_combo"
+    }
+}

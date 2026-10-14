@@ -1,0 +1,67 @@
+{
+    "type": "all_of",
+    "terms": [
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "obsidian",
+                        "crying_obsidian",
+                        "blackstone",
+                        "gilded_blackstone"
+                    ]
+                }
+            },
+            "offsetY": -1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#candles",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": 1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#candles",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetX": -1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#candles",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetZ": 1
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#candles",
+                    "state": {
+                        "lit": "true"
+                    }
+                }
+            },
+            "offsetZ": -1
+        }
+    ]
+}

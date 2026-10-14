@@ -1,0 +1,9 @@
+{
+    "type": "any_of",
+    "terms": [
+        "goldark:input/forward",
+        "goldark:input/backward",
+        "goldark:input/left",
+        "goldark:input/right"
+    ]
+}

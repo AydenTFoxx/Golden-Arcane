@@ -1,0 +1,42 @@
+{
+	"parent": "goldark:obtain_thunder_egg",
+	"display": {
+		"icon": {
+			"id": "feather"
+		},
+		"title": "Friendly Fire",
+		"description": "Get toasted by your own Thunder Egg. §o§7(Have you tried stepping backwards as you throw it?)",
+		"hidden": false
+	},
+	"criteria": {
+		"struck_by_thunder_egg": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"tags": [
+							{
+								"id": "#is_lightning",
+								"expected": true
+							}
+						]
+					}
+				},
+				"player": {
+					"type": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"entity_tags": {
+							"all_of": [
+								"goldark.temp.held_thunder_egg"
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"experience": 2
+	}
+}

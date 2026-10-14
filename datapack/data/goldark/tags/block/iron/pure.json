@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#goldark:iron/heavy",
+        "iron_bars",
+        "iron_door",
+        "iron_trapdoor",
+        "cauldron",
+        "iron_chain",
+        "heavy_weighted_pressure_plate"
+    ]
+}

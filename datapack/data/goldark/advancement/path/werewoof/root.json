@@ -1,0 +1,64 @@
+{
+    "display": {
+        "icon": {
+            "id": "bone"
+        },
+        "title": {
+            "text": "The Werewoof"
+        },
+        "description": "A powerful beast, an unstoppable omen",
+        "frame": "task",
+        "background": "minecraft:textures/block/light_gray_wool.png",
+        "announce_to_chat": false,
+        "show_toast": true
+    },
+    "criteria": {
+        "killed_by_werewoof": {
+            "trigger": "entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "wolf",
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_werewoof"
+                            ]
+                        },
+                        "periodic_tick": 240
+                    }
+                },
+                "killing_blow": {
+                    "is_direct": true
+                }
+            }
+        },
+        "lycanthropy_ritual": {
+            "trigger": "impossible"
+        },
+        "drink_debug_potion": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "items": "potion",
+                    "components": {
+                        "custom_data": {
+                            "goldark.potions.werepyrism": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "killed_by_werewoof",
+            "lycanthropy_ritual",
+            "drink_debug_potion"
+        ]
+    ],
+    "rewards": {
+        "function": "goldark:tools/lycanthropy/convert"
+    }
+}

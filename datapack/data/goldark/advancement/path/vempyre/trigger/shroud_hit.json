@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "taken": {
+                        "min": 2
+                    }
+                },
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_tags": {
+                            "all_of": [
+                                "goldark.is_vempyre",
+                                "goldark.vempyre.skill_shroud"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "goldark:path/vempyre/skills/shroud/end"
+    }
+}

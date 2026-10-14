@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "obtain_ingredient": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "feather"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "goldark:artifact/levitation_feather",
+            "goldark:artifact/speed_feather"
+        ]
+    }
+}
