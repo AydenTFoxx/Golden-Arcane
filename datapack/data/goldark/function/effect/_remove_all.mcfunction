@@ -17,7 +17,7 @@ tag @s remove goldark.effect.purity
 # Deny Holy Sickness
 execute if score @s goldark.effect_timer.holy_sickness matches 100.. unless score @s goldark.deaths_player matches 1.. run function goldark:effect/holy_sickness/overlay
 
-# Revoke Holy Numbness and Purity
+# Revoke Holy Numbness
 execute if score @s goldark.effect_timer.holy_numbness matches 1.. run scoreboard players set @s goldark.effect_timer.holy_numbness 2
 
 

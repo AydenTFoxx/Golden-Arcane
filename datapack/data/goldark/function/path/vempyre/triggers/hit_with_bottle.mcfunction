@@ -10,11 +10,12 @@ advancement revoke @s only goldark:path/vempyre/take_blood/hit_with_bottle
 # Ignore if player has the Purity effect
 execute if entity @s[tag=goldark.effect.purity] run return fail
 
-# Ignore if target is Undead or non-humanoid, or randomly with a certain rate
+# Ignore if target is Undead or non-humanoid
 execute unless entity @n[type=#goldark:humanoid/living, tag=!goldark.is_vempyre, nbt={ HurtTime: 10s }, distance=..4] run return fail
 
-execute if predicate goldark:random/33 run return -1
 
+# Damage foe
+damage @n[type=#goldark:humanoid/living, tag=!goldark.is_vempyre, nbt={ HurtTime: 10s }, distance=..4] 3 dry_out by @s
 
 # Remove empty bottle
 clear @s glass_bottle 1

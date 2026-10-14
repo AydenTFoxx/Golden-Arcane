@@ -3,12 +3,12 @@
     "key": {
         "G": "gold_block",
         "A": "golden_apple",
-        "q": "quartz"
+        "d": "diamond"
     },
     "pattern": [
-        "qGq",
+        "dGd",
         "GAG",
-        "qGq"
+        "dGd"
     ],
     "result": {
         "id": "enchanted_golden_apple"

@@ -1,7 +1,7 @@
 {
     "type": "crafting_shaped",
     "key": {
-        "G": "gold_block",
+        "G": "gold_ingot",
         "t": "#goldark:thunder_token",
         "q": "quartz",
         "O": "egg"

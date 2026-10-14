@@ -15,25 +15,6 @@
     "criteria": {
         "forge_blood_weapon": {
             "trigger": "impossible"
-        },
-        "get_blood_weapon": {
-            "trigger": "inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": "iron_sword",
-                        "components": {
-                            "custom_data": {
-                                "goldark": {
-                                    "items": {
-                                        "blood_weapon": true
-                                    }
-                                }
-                            }
-                        }
-                    }
-                ]
-            }
         }
     },
     "rewards": {

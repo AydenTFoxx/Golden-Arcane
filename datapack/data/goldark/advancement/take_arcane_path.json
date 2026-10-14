@@ -8,7 +8,20 @@
 			}
 		},
 		"title": "Tainted Soul",
-		"description": "The Gods oversee your actions.",
+		"description": [
+			{
+				"text": "The ",
+				"color": "gray"
+			},
+			{
+				"text": "Gods",
+				"color": "yellow"
+			},
+			{
+				"text": " oversee your actions.",
+				"color": "gray"
+			}
+		],
 		"hidden": true
 	},
 	"criteria": {

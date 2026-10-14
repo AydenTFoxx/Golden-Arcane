@@ -4,17 +4,6 @@
 ## * Last modified: January 26th, 2025 (AydenTFoxx)
 
 
-# Store current time of day
-execute store result score #goldark_time_day goldark.dummy run time query day
-
-# Update stored Moon phase
-execute if score #goldark_time_day goldark.dummy matches 12600 store result score #goldark_moon_phase goldark.dummy run time query day
-execute if score #goldark_time_day goldark.dummy matches 12600 run scoreboard players operation #goldark_moon_phase goldark.dummy %= #goldark_moon_check goldark.dummy
-
-execute if score #goldark_time_day goldark.dummy matches 0 store result score #goldark_moon_phase goldark.dummy run time query day
-execute if score #goldark_time_day goldark.dummy matches 0 run scoreboard players operation #goldark_moon_phase goldark.dummy %= #goldark_moon_check goldark.dummy
-
-
 ## WEREWOOF
 
 # Run Werewoof behavior & traits

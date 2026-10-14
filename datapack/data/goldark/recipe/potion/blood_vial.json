@@ -3,7 +3,7 @@
 	"ingredients": [
 		"potion",
 		"#goldark:bloody",
-		[ "fermented_spider_eye", "redstone" ],
+		[ "fermented_spider_eye", "redstone", "poppy" ],
 		"#goldark:magic_catalyst"
 	],
 	"result": {

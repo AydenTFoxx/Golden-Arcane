@@ -5,7 +5,7 @@
             "id": "chainmail_chestplate"
         },
         "title": "Exposure Therapy",
-        "description": "Wear a piece of Iron or Chainmail armor. This might not be your best idea."
+        "description": "Attempt to wear a piece of Iron or Chainmail armor. This might not be your best idea."
     },
     "criteria": {
         "wear_iron_helmet": {

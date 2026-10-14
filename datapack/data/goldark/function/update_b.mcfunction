@@ -45,7 +45,7 @@ execute as @e[type=marker, tag=goldark.dummy_spell.judgement] at @s run function
 ##? RITUAL
 
 ## Lycanthropy
-execute as @e[type=#goldark:technical, tag=goldark.dummy_ritual.lycanthropy] at @s run function goldark:ritual/lycanthropy/tick
+execute as @e[type=marker, tag=goldark.dummy_ritual.lycanthropy] at @s run function goldark:ritual/lycanthropy/tick
 
 ## Lycanthropy Reversal
-execute as @e[type=#goldark:technical, tag=goldark.dummy_ritual.lycanthropy_revert] at @s run function goldark:ritual/lycanthropy_revert/tick
+execute as @e[type=marker, tag=goldark.dummy_ritual.lycanthropy_revert] at @s run function goldark:ritual/lycanthropy_revert/tick

@@ -32,7 +32,7 @@
                     }
                 }
             },
-            "max_damage": 2048,
+            "max_damage": 4096,
             "consumable": {
                 "animation": "bow",
                 "consume_seconds": 99999,

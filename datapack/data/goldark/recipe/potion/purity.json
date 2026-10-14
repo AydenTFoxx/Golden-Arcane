@@ -2,7 +2,7 @@
     "type": "crafting_shapeless",
     "ingredients": [
         "honey_bottle",
-        "glistering_melon_slice",
+        "#goldark:golden_foods",
         "fermented_spider_eye",
         "glowstone_dust"
     ],
